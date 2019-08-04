@@ -1,6 +1,13 @@
 .page-main__selection,
 .page-main__button-submit {
   .green-button();
+  outline: none;
+  border: none;
+  padding-top: 0px;
+}
+
+.page-main__selection {
+  padding-top: 8px;
 }
 
 .page-main__program p,
@@ -8,12 +15,26 @@
   .upper();
 }
 
+.page-main__header-text h1,
+.page-main__header-text b {
+  display: block;
+  color: @white;
+  font-weight: normal;
+  text-align: center;
+}
+
 .page-main__catalog-slim,
 .page-main__catalog-pro {
   .upper(16px);
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
 }
 
-.page-main__example-text {
+.page-main__example-text,
+.page-main__slim-paragraph,
+.page-main__gain-paragraph  {
   .arial();
 }
 
@@ -23,7 +44,11 @@
 
 .page-main__header-text {
   background-image: url("../img/index-background-mobile@1x.jpg");
-  background-size: 100%;
   background-repeat: no-repeat;
   background-size: 320px 305px;
+}
+
+.page-main__slim-img--slim,
+.page-main__gain-img--gain {
+ .green-border();
 }
