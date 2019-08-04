@@ -1,5 +1,41 @@
 
+.selection-form__fieldset {
+  border: none;
+}
+
+.selection-form__fieldset legend {
+  .header-selection();
+}
+
 .selection-form__fieldset label {
   .upper();
   line-height: 1;
+}
+
+.selection-form__fieldset input[type="text"],
+.selection-form__fieldset input[type="number"],
+.selection-form__fieldset input[type="email"],
+.selection-form__fieldset input[type="tel"] {
+  .input-border();
+}
+
+.selection-fieldset-textarea textarea {
+  .input-border();
+  width: 280px;
+  height: 150px;
+}
+
+.selection-form__fieldset ::placeholder {
+  .upper(16px);
+  color: @greybrown;
+  font-family: "Oswald", Arial, sans-serif;
+}
+
+.selection-form__required {
+  &--bottom {
+    .arial();
+    display: block;
+    line-height: 1.14;
+    text-align: center;
+  }
 }

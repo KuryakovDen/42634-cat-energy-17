@@ -38,13 +38,13 @@
         <fieldset class="selection-form__fieldset selection-fieldset-text">
           <legend class="selection-fieldset-text__legend visually-hidden">Параметры кота</legend>
           <label class="selection-fieldset-text__label">
-            Имя:
+            Имя:*
           </label>
-          <input class="selection-fieldset-text__input" type="text" name="cat-name" placeholder="Барсик"><br>
+          <input class="selection-fieldset-text__input" type="text" name="cat-name" placeholder="Барсик" required><br>
           <label class="selection-fieldset-text__label" placeholder="7">
-            Вес (кг):
+            Вес (кг):*
           </label>
-          <input class="selection-fieldset-text__input" type="number" name="cat-weight"><br>
+          <input class="selection-fieldset-text__input" type="number" name="cat-weight" required><br>
           <label class="selection-fieldset-text__label" placeholder="7">
             Возраст (лет):
           </label>
@@ -77,22 +77,22 @@
           </ul>
         </fieldset>
         <fieldset class="selection-form__fieldset selection-fieldset-contacts">
-          <legend class="selection-fieldset-contacts__legend visually-hidden">Контактные данные (владельца кота)</legend>
+          <legend class="selection-fieldset-contacts__legend">Контактные данные (владельца кота)</legend>
           <label class="selection-fieldset-contacts__label">
-            E-mail:
+            E-mail:*
           </label>
-          <input class="selection-fieldset-contacts__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com"><br>
+          <input class="selection-fieldset-contacts__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required><br>
           <label class="selection-fieldset-contacts__label">
-            Телефон:
+            Телефон:*
           </label>
-          <input class="selection-fieldset-contacts__input" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90"><br>
+          <input class="selection-fieldset-contacts__input" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required><br>
         </fieldset>
         <fieldset class="selection-form__fieldset selection-fieldset-textarea">
           <legend class="selection-fieldset-textarea__legend">Комментарий</legend>
           <textarea class="selection-fieldset-textarea__about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="selection-form__fieldset selection-fieldset-extra">
-          <legend class="selection-fieldset-extra__legend visually-hidden">Дополнительно</legend>
+          <legend class="selection-fieldset-extra__legend">Дополнительно</legend>
           <ul class="selection-fieldset-extra__list food-extra-list">
             <li class="food-extra-list__item">
               <label class="food-extra-list__label">
@@ -127,7 +127,7 @@
         <button type="submit" class="page-main__button-submit">Отправить заявку</button><br>
         <span class="selection-form__required--bottom">
           <sup>*</sup>
-          - обязатеьные поля
+           — Обязательные поля
         </span>
       </form>
     </main>
