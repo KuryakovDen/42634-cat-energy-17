@@ -37,92 +37,102 @@
       <form class="page-main__form selection-form" method="POST" action="https://echo.htmlacademy.ru">
         <fieldset class="selection-form__fieldset selection-fieldset-text">
           <legend class="selection-form__legend visually-hidden">Параметры кота</legend>
-          <label class="selection-form__label">
-            Имя:*
-          </label>
-          <input class="selection-fieldset-text__input" type="text" name="cat-name" placeholder="Барсик" required><br><br>
-          <label class="selection-form__label" placeholder="7">
-            Вес (кг):*
-          </label>
-          <input class="selection-fieldset-text__input" type="number" name="cat-weight" required><br><br>
-          <label class="selection-form__label" placeholder="7">
-            Возраст (лет):
-          </label>
-          <input class="selection-fieldset-text__input" type="number" name="cat-age">
+          <div class="selection-form__wrapper form-wrapper">
+            <label class="form-wrapper__label">
+                Имя:*
+            </label>
+            <input class="form-wrapper__input" type="text" name="cat-name" placeholder="Барсик" required><br><br>
+            <label class="form-wrapper__label" placeholder="7">
+                Вес (кг):*
+            </label>
+            <input class="form-wrapper__input" type="number" name="cat-weight" required><br><br>
+            <label class="form-wrapper__label" placeholder="7">
+                Возраст (лет):
+            </label>
+            <input class="form-wrapper__input" type="number" name="cat-age">
+          </div>
         </fieldset>
         <fieldset class="selection-form__fieldset selection-fieldset-radio">
           <legend class="selection-form__legend visually-hidden">Цель программы питания</legend>
-          <ul class="selection-fieldset-radio__list program-goal-list">
-            <li class="program-goal-list__item">
-              <label class="selection-form__label program-goal-list__label">
-                <input class="program-goal-list__input" type="radio" name="radio-button" value="slim" checked>
-                <span class="program-goal-list__slim">Похудение</span>
-                <span class="program-goal-list__indicator"></span>
-              </label>
-            </li>
-            <li class="program-goal-list__item">
-              <label class="selection-form__label program-goal-list__label">
-                <input class="program-goal-list__input" type="radio" name="radio-button" value="fat">
-                <span class="program-goal-list__fat">Набор массы</span>
-                <span class="program-goal-list__indicator"></span>
-              </label>
-            </li>
-            <li class="program-goal-list__item">
-              <label class="selection-form__label program-goal-list__label">
-                <input class="program-goal-list__input" type="radio" name="radio-button" value="idontknow">
-                <span class="program-goal-list__advice">Не знаю (нужен ваш совет)</span>
-                <span class="program-goal-list__indicator"></span>
-              </label>
-            </li>
-          </ul>
+          <div class="selection-form__wrapper form-wrapper">
+            <ul class="form-wrapper__list">
+              <li class="form-wrapper__item">
+                <label class="form-wrapper__label">
+                  <input class="form-wrapper__input--radio-on form-wrapper__input--radio-off" type="radio" name="radio-button" value="slim" checked>
+                  <span class="form-wrapper__slim">Похудение</span>
+                  <span class="form-wrapper__indicator"></span>
+                </label>
+              </li>
+              <li class="form-wrapper__item">
+                <label class="form-wrapper__label">
+                  <input class="form-wrapper__input--radio-on form-wrapper__input--radio-off" type="radio" name="radio-button" value="fat">
+                  <span class="form-wrapper__fat">Набор массы</span>
+                  <span class="form-wrapper__indicator"></span>
+                </label>
+              </li>
+              <li class="form-wrapper__item">
+                <label class="form-wrapper__label">
+                  <input class="form-wrapper__input--radio-on form-wrapper__input--radio-off" type="radio" name="radio-button" value="idontknow">
+                  <span class="form-wrapper__advice">Не знаю (нужен ваш совет)</span>
+                  <span class="form-wrapper__indicator"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <fieldset class="selection-form__fieldset selection-fieldset-contacts">
           <legend class="selection-form__legend">Контактные данные (владельца кота)</legend>
-          <label class="selection-form__label selection-fieldset-contacts__label">
-            E-mail:*
-          </label>
-          <input class="selection-fieldset-contacts__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required><br><br>
-          <label class="selection-form__label selection-fieldset-contacts__label">
-            Телефон:*
-          </label>
-          <input class="selection-fieldset-contacts__input" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required><br><br>
+          <div class="selection-form__wrapper form-wrapper">
+            <label class="form-wrapper__label">
+                E-mail:*
+            </label>
+            <input class="form-wrapper__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required><br><br>
+            <label class="form-wrapper__label">
+                Телефон:*
+            </label>
+            <input class="form-wrapper__input" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required><br><br>
+          </div>
         </fieldset>
         <fieldset class="selection-form__fieldset selection-fieldset-textarea">
-          <legend class="selection-fieldset-textarea__legend">Комментарий</legend>
-          <textarea class="selection-form__textarea selection-fieldset-textarea__about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <legend class="selection-form__legend">Комментарий</legend>
+          <div class="selection-form__wrapper form-wrapper">
+            <textarea class="form-wrapper__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
         <fieldset class="selection-form__fieldset selection-fieldset-extra">
           <legend class="selection-form__legend">Дополнительно</legend>
-          <ul class="selection-fieldset-extra__list food-extra-list">
-            <li class="food-extra-list__item">
-              <label class="selection-form__label food-extra-list__label">
-                <input class="food-extra-list__input" type="checkbox" name="sugar-name" value="sugar" checked>
-                <span class="food-extra-list__name">Сахарозаменитель</span>
-                <span class="food-extra-list__indicator"></span>
-              </label>
-            </li>
-            <li class="food-extra-list__item">
-              <label class="selection-form__label food-extra-list__label">
-                <input class="food-extra-list__input" type="checkbox" name="water-name" value="water">
-                <span class="food-extra-list__name">Питьевая вода</span>
-                <span class="food-extra-list__indicator"></span>
-              </label>
-            </li>
-            <li class="food-extra-list__item">
-              <label class="selection-form__label food-extra-list__label">
-                <input class="food-extra-list__input" type="checkbox" name="milk-name" value="milk">
-                <span class="food-extra-list__name">Молоко</span>
-                <span class="food-extra-list__indicator"></span>
-              </label>
-            </li>
-            <li class="food-extra-list__item">
-              <label class="selection-form__label food-extra-list__label">
-                <input class="food-extra-list__input" type="checkbox" name="vitamin-name" value="vitamin">
-                <span class="food-extra-list__name">Витамины</span>
-                <span class="food-extra-list__indicator"></span>
-              </label>
-            </li>
-          </ul>
+          <div class="selection-form__wrapper form-wrapper">
+            <ul class="form-wrapper__list">
+              <li class="form-wrapper__item">
+                <label class="form-wrapper__label">
+                  <input class="form-wrapper__input--check-on form-wrapper__input--check-off" type="checkbox" name="sugar-name" value="sugar" checked>
+                  <span class="form-wrapper__name">Сахарозаменитель</span>
+                  <span class="form-wrapper__indicator"></span>
+                </label>
+              </li>
+              <li class="form-wrapper__item">
+                <label class="form-wrapper__label">
+                  <input class="form-wrapper__input--check-on form-wrapper__input--check-off" type="checkbox" name="water-name" value="water">
+                  <span class="form-wrapper__name">Питьевая вода</span>
+                  <span class="form-wrapper__indicator"></span>
+                </label>
+              </li>
+              <li class="form-wrapper__item">
+                <label class="form-wrapper__label">
+                  <input class="form-wrapper__input--check-on form-wrapper__input--check-off" type="checkbox" name="milk-name" value="milk">
+                  <span class="form-wrapper__name">Молоко</span>
+                  <span class="form-wrapper__indicator"></span>
+                </label>
+              </li>
+              <li class="form-wrapper__item">
+                <label class="form-wrapper__label">
+                  <input class="form-wrapper__input--check-on form-wrapper__input--check-off" type="checkbox" name="vitamin-name" value="vitamin">
+                  <span class="form-wrapper__name">Витамины</span>
+                  <span class="form-wrapper__indicator"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <button type="submit" class="page-main__button-submit">Отправить заявку</button><br>
         <span class="selection-form__required--bottom">
