@@ -1,0 +1,46 @@
+.index-header__h1,
+.index-header__bold {
+  display: block;
+  color: @white;
+  font-weight: normal;
+  text-align: center;
+}
+
+.index-header__h1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  line-height: 1;
+}
+
+.index-header__bold {
+  .upper();
+}
+
+.index-header__food {
+  .margin(30px, 20px, 0, 20px);
+}
+
+.index-header__selection {
+  .green-button();
+  .margin();
+  outline: none;
+  border: none;
+  padding-top: 8px;
+}
+
+/*.page-main__example-text,*/
+.info-block__slim-paragraph,
+.info-block__gain-paragraph {
+  .arial();
+}
+
+.info-block__catalog--slim,
+.info-block__catalog--pro {
+  .upper(16px);
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+}
