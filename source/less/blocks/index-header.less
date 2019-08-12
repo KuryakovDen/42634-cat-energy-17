@@ -1,0 +1,50 @@
+.index-header {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 305px;
+}
+
+.index-header__title,
+.index-header__bold {
+  .center();
+  color: @white;
+  font-weight: normal;
+}
+
+.index-header__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  line-height: 1;
+}
+
+.index-header__bold {
+  .upper();
+}
+
+.index-header__food {
+  .margin(30px, 20px, 0, 20px);
+}
+
+.index-header__selection {
+  .green-button();
+  .margin();
+  outline: none;
+  border: none;
+}
+
+/*.page-main__example-text,*/
+.info-block__slim-paragraph,
+.info-block__gain-paragraph {
+  .arial();
+}
+
+.info-block__catalog--slim,
+.info-block__catalog--pro {
+  .upper(16px);
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+}

@@ -1,0 +1,34 @@
+.selection-form__fieldset {
+  .margin();
+  padding: 0;
+  border: none;
+}
+
+.selection-form__legend {
+  .header-selection();
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.selection-form__button {
+  .green-button();
+  .margin();
+  outline: none;
+  border: none;
+  padding-top: 0;
+}
+
+.selection-form__fieldset ::placeholder {
+  .upper(16px);
+  color: @greybrown;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.selection-form__required {
+  &--bottom {
+    .arial();
+    .center();
+    line-height: 1.14;
+    margin-bottom: 34px;
+  }
+}

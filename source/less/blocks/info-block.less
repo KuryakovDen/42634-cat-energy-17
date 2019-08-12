@@ -1,0 +1,24 @@
+.info-block {
+  background-color: @grey;
+}
+
+.info-block__header {
+  .upper(24px);
+  font-weight: normal;
+}
+
+.info-block__slim-paragraph,
+.info-block__gain-paragraph {
+  .margin();
+  margin-bottom: 23px;
+}
+
+.info-block__catalog {
+  &--slim,
+  &--pro {
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 22px;
+  }
+}

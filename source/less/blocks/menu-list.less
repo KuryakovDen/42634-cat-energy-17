@@ -1,0 +1,26 @@
+.menu-list {
+  .list-style();
+}
+
+.menu-list__item {
+  .upper();
+  .border();
+  font-size: 20px;
+  font-weight: bold;
+  width: 320px;
+  height: 65px;
+  background-color: @white;
+
+  &:hover {
+    .opacity();
+  }
+
+  &:active {
+    .opacity(0.3);
+  }
+}
+
+.menu-list__link {
+  .center();
+  padding-top: 20px;
+}
