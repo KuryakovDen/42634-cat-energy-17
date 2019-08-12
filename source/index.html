@@ -18,13 +18,13 @@
         <div class="page-navigation__wrapper">
           <ul class="page-navigation__list menu-list">
             <li class="menu-list__item">
-              <a class="menu-list__link" href="index.html">Главная</a>
+              <a class="menu-list__link menu-list__link--white" href="index.html">Главная</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="catalog.html">Каталог продукции</a>
+              <a class="menu-list__link menu-list__link--white" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="selection.html">Подбор программы</a>
+              <a class="menu-list__link menu-list__link--white" href="selection.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -37,22 +37,26 @@
         <img class="index-header__food" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Картинка еды">
         <a class="index-header__selection" href="selection.html">Подобрать программу</a>
       </div>
-      <section class="page-main__info info-block">
-        <h2 class="info-block__header">Похудение</h2>
-        <img class="info-block__img--slim" src="img/icon-cat-slim.svg" width="50" height="51" alt="Картинка похудения">
-        <p class="info-block__slim-paragraph">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="info-block__catalog--slim" href="#">Каталог Slim</a>
-      </section>
-      <section class="page-main__info info-block">
-        <h2 class="info-block__header">Набор массы</h2>
-        <img class="info-block__img--gain" src="img/icon-cat-pro.svg" width="67" height="28" alt="Картинка набора массы">
-        <p class="info-block__gain-paragraph">Заработать авторитет среди дворовых котов и даже собак?
-          Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="info-block__catalog--pro" href="#">Каталог pro</a>
-      </section>
-      <section class="page-main__howitworks section--how-work">
-        <div class="how-work">
-          <h2 class="how-work__title title-margin">Как это работает</h2>
+      <div class="page-main__info-container info-container">
+        <section class="page-main__info info-block">
+          <h2 class="info-block__header">Похудение</h2>
+          <img class="info-block__img--slim" src="img/icon-cat-slim.svg" width="50" height="51" alt="Картинка похудения">
+          <p class="info-block__slim-paragraph">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <hr>
+          <a class="info-block__catalog--slim" href="#">Каталог Slim</a>
+        </section>
+        <section class="page-main__info info-block">
+          <h2 class="info-block__header">Набор массы</h2>
+          <img class="info-block__img--gain" src="img/icon-cat-pro.svg" width="67" height="28" alt="Картинка набора массы">
+          <p class="info-block__gain-paragraph">Заработать авторитет среди дворовых котов и даже собак?
+            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <hr>
+          <a class="info-block__catalog--pro" href="#">Каталог pro</a>
+        </section>
+      </div>
+      <section class="page-main__howitworks pattern-header">
+        <div class="pattern-header__container">
+          <h2 class="pattern-header__title">Как это работает</h2>
         </div>
         <ul class="howitworks-section__list howitworks-list">
           <li class="howitworks-list__item howitworks-list__img--leaf">
@@ -69,9 +73,9 @@
           </li>
         </ul>
       </section>
-      <section class="page-main__example section--example">
-        <div class="example">
-          <h2 class="example__header title-padding">Живой пример</h2>
+      <section class="page-main__example pattern-header">
+        <div class="example pattern-header__container">
+          <h2 class="example__header field__title pattern-header__title-padding">Живой пример</h2>
         </div>
         <p class="example__paragraph">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
@@ -89,7 +93,7 @@
           Санкт-Петербург
         </address>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616135686!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1561268887204!5m2!1sru!2sru" width="320" height="400" style="border:0" allowfullscreen></iframe>
+      <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616135686!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1561268887204!5m2!1sru!2sru" height="400" style="border:0" allowfullscreen></iframe>
       <div class="page-footer__social page-social">
         <a class="page-social__link" href="#">
           <img class="page-social__img" src="img/logo-footer.svg" width="128" height="24" alt="Картинка логотипа">

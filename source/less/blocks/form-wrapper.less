@@ -1,72 +1,10 @@
-.form-wrapper {
-  &--slim,
-  &--fat,
-  &--advice,
-  &--vitamin,
-  &--milk,
-  &--sugar,
-  &--water {
-    font-size: 16px;
-  }
-}
-
-.form-wrapper__label {
-  .upper();
-  line-height: 1;
-  margin-right: 15px;
-}
-
-.form-wrapper__list {
-  .list-style();
-  .border();
-
-  &--noborder {
-    border: none;
-  }
-}
-
-.form-wrapper__input {
-  &--name,
-  &--weight,
-  &--age,
-  &--email,
-  &--phone {
-    .input-border();
-    margin-bottom: 15px;
-  }
-
-  &--name {
-    width: 215px;
-  }
-
-  &--weight {
-    width: 200px;
-  }
-
-  &--age {
-    width: 170px;
-  }
-
-  &--email {
-    width: 210px;
-  }
-
-  &--phone {
-    width: 195px;
-  }
-}
-
 .form-wrapper__textarea {
   .input-border();
   width: 280px;
   height: 150px;
   resize: none;
-}
 
-.form-wrapper__item {
-  padding-top: 25px;
-
-  &--last {
-    padding-bottom: 25px;
+  &::placeholder {
+    padding-left: 15px;
   }
 }

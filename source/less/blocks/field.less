@@ -1,0 +1,38 @@
+.field__label {
+  .upper();
+  line-height: 1;
+  margin-right: 15px;
+}
+
+.field__list {
+  .list-style();
+  .border();
+
+  &--noborder {
+    border: none;
+  }
+}
+
+.field__input {
+  .input-border();
+  margin-bottom: 15px;
+  font-size: 16px;
+
+  &::placeholder {
+    padding-left: 15px;
+  }
+}
+
+.field__item {
+  padding-top: -25px;
+
+  &--last {
+    padding-bottom: 25px;
+  }
+}
+
+.field-span {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}

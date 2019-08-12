@@ -30,53 +30,59 @@
         </div>
       </nav>
     </header>
-    <main class="page-main">
-      <div class="page-main__program select-program">
-        <h1 class="select-program__header title-margin">Подбор программы</h1>
+    <main class="page-main pattern-header">
+      <div class="page-main__program select-program pattern-header__container">
+        <h1 class="select-program__header pattern-header__title">Подбор программы</h1>
         <p class="select-program__paragraph">Заполните анкету и мы подберем <br>
           программу питания для вашего кота</p>
       </div>
       <form class="page-main__form selection-form" method="POST" action="https://echo.htmlacademy.ru">
         <fieldset class="selection-form__fieldset">
           <legend class="selection-form__legend visually-hidden">Параметры кота</legend>
-          <div class="selection-form__wrapper form-wrapper">
-            <label class="form-wrapper__label">
-                Имя:*
-            </label>
-            <input class="form-wrapper__input--name" type="text" name="cat-name" placeholder="Барсик" required><br>
-            <label class="form-wrapper__label" placeholder="7">
-                Вес (кг):*
-            </label>
-            <input class="form-wrapper__input--weight" type="number" name="cat-weight" required><br>
-            <label class="form-wrapper__label" placeholder="7">
-                Возраст (лет):
-            </label>
-            <input class="form-wrapper__input--age" type="number" name="cat-age">
+          <div class="selection-form__wrapper">
+            <div class="field">
+              <label class="field__label">
+                  Имя:*
+              </label>
+              <input class="field__input" type="text" name="cat-name" placeholder="Барсик" required>
+            </div>
+            <div class="field">
+              <label class="field__label">
+                  Вес (кг):*
+              </label>
+              <input class="field__input" type="number" name="cat-weight" placeholder="7" required>
+            </div>
+            <div class="field">
+              <label class="field__label">
+                  Возраст (лет):
+              </label>
+              <input class="field__input" type="number" name="cat-age" placeholder="7">
+            </div>
           </div>
         </fieldset>
         <fieldset class="selection-form__fieldset">
           <legend class="selection-form__legend visually-hidden">Цель программы питания</legend>
-          <div class="selection-form__wrapper form-wrapper">
-            <ul class="form-wrapper__list">
-              <li class="form-wrapper__item">
-                <label class="form-wrapper__label">
-                  <input class="form-wrapper__input--radio-on form-wrapper__input--radio-off" type="radio" name="radio-button" value="slim" checked>
-                  <span class="form-wrapper--slim">Похудение</span>
-                  <span class="form-wrapper__indicator"></span>
+          <div class="selection-form__wrapper">
+            <ul class="field__list">
+              <li class="field__item">
+                <label class="field__label">
+                  <input class="field__input" type="radio" name="radio-button" value="slim" checked>
+                  <span class="field__span">Похудение</span>
+                  <span class="field__indicator"></span>
                 </label>
               </li>
-              <li class="form-wrapper__item">
-                <label class="form-wrapper__label">
-                  <input class="form-wrapper__input--radio-on form-wrapper__input--radio-off" type="radio" name="radio-button" value="fat">
-                  <span class="form-wrapper--fat">Набор массы</span>
-                  <span class="form-wrapper__indicator"></span>
+              <li class="field__item">
+                <label class="field__label">
+                  <input class="field__input" type="radio" name="radio-button" value="fat">
+                  <span class="field__span">Набор массы</span>
+                  <span class="field__indicator"></span>
                 </label>
               </li>
-              <li class="form-wrapper__item form-wrapper__item--last">
-                <label class="form-wrapper__label">
-                  <input class="form-wrapper__input--radio-on form-wrapper__input--radio-off" type="radio" name="radio-button" value="idontknow">
-                  <span class="form-wrapper--advice">Не знаю (нужен ваш совет)</span>
-                  <span class="form-wrapper__indicator"></span>
+              <li class="field__item field__item--last">
+                <label class="field__label">
+                  <input class="field__input" type="radio" name="radio-button" value="idontknow">
+                  <span class="field__span">Не знаю (нужен ваш совет)</span>
+                  <span class="field__indicator"></span>
                 </label>
               </li>
             </ul>
@@ -85,14 +91,18 @@
         <fieldset class="selection-form__fieldset">
           <legend class="selection-form__legend">Контактные данные (владельца кота)</legend>
           <div class="selection-form__wrapper form-wrapper">
-            <label class="form-wrapper__label">
-                E-mail:*
-            </label>
-            <input class="form-wrapper__input--email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required><br><br>
-            <label class="form-wrapper__label">
-                Телефон:*
-            </label>
-            <input class="form-wrapper__input--phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required><br><br>
+            <div class="form-wrapper__block field">
+              <label class="field__label">
+                  E-mail:*
+              </label>
+              <input class="field__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required><br><br>
+            </div>
+            <div class="form-wrapper__block field">
+              <label class="field__label">
+                  Телефон:*
+              </label>
+              <input class="field__input" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required><br><br>
+            </div>
           </div>
         </fieldset>
         <fieldset class="selection-form__fieldset">
@@ -103,34 +113,34 @@
         </fieldset>
         <fieldset class="selection-form__fieldset">
           <legend class="selection-form__legend">Дополнительно</legend>
-          <div class="selection-form__wrapper form-wrapper">
-            <ul class="form-wrapper__list form-wrapper__list--noborder">
-              <li class="form-wrapper__item">
-                <label class="form-wrapper__label">
-                  <input class="form-wrapper__input--check-on form-wrapper__input--check-off" type="checkbox" name="sugar-name" value="sugar" checked>
-                  <span class="form-wrapper--sugar">Сахарозаменитель</span>
-                  <span class="form-wrapper__indicator"></span>
+          <div class="selection-form__wrapper field">
+            <ul class="field__list field__list--noborder">
+              <li class="field__item">
+                <label class="field__label">
+                  <input class="field__input--check-on field__input--check-off" type="checkbox" name="sugar-name" value="sugar" checked>
+                  <span class="field__span">Сахарозаменитель</span>
+                  <span class="field__indicator"></span>
                 </label>
               </li>
-              <li class="form-wrapper__item">
-                <label class="form-wrapper__label">
-                  <input class="form-wrapper__input--check-on form-wrapper__input--check-off" type="checkbox" name="water-name" value="water">
-                  <span class="form-wrapper--water">Питьевая вода</span>
-                  <span class="form-wrapper__indicator"></span>
+              <li class="field__item">
+                <label class="field__label">
+                  <input class="field__input--check-on field__input--check-off" type="checkbox" name="water-name" value="water">
+                  <span class="field__span">Питьевая вода</span>
+                  <span class="field__indicator"></span>
                 </label>
               </li>
-              <li class="form-wrapper__item">
-                <label class="form-wrapper__label">
-                  <input class="form-wrapper__input--check-on form-wrapper__input--check-off" type="checkbox" name="milk-name" value="milk">
-                  <span class="form-wrapper--milk">Молоко</span>
-                  <span class="form-wrapper__indicator"></span>
+              <li class="field__item">
+                <label class="field__label">
+                  <input class="field__input--check-on field__input--check-off" type="checkbox" name="milk-name" value="milk">
+                  <span class="field__span">Молоко</span>
+                  <span class="field__indicator"></span>
                 </label>
               </li>
-              <li class="form-wrapper__item form-wrapper__item--last">
-                <label class="form-wrapper__label">
-                  <input class="form-wrapper__input--check-on form-wrapper__input--check-off" type="checkbox" name="vitamin-name" value="vitamin">
-                  <span class="form-wrapper--vitamin">Витамины</span>
-                  <span class="form-wrapper__indicator"></span>
+              <li class="field__item field__item--last">
+                <label class="field__label">
+                  <input class="field__input--check-on field__input--check-off" type="checkbox" name="vitamin-name" value="vitamin">
+                  <span class="field__span">Витамины</span>
+                  <span class="field__indicator"></span>
                 </label>
               </li>
             </ul>
@@ -151,7 +161,7 @@
           Санкт-Петербург
         </address>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616135686!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1561268887204!5m2!1sru!2sru" width="320" height="400" style="border:0" allowfullscreen></iframe>
+      <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616135686!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1561268887204!5m2!1sru!2sru" height="400" style="border:0" allowfullscreen></iframe>
       <div class="page-footer__social page-social">
         <a class="page-social__link" href="#">
           <img class="page-social__img" src="img/logo-footer.svg" width="128" height="24" alt="Картинка логотипа">
