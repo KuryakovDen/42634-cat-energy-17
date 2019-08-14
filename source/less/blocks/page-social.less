@@ -3,8 +3,36 @@
   background-color: @grey;
 }
 
+.page-social__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  margin: auto;
+}
+
 .page-social__link {
   .center();
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: relative;
   margin-top: 39px;
   margin-bottom: 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-social__links-path:hover {
+  fill: @green-button;
+}
+
+.page-social__links-path:active {
+  fill: @green-button;
+  opacity: 0.3;
 }
