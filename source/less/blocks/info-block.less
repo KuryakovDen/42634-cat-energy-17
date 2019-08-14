@@ -1,10 +1,37 @@
 .info-block {
   background-color: @grey;
+  min-height: 265px;
 }
 
 .info-block__header {
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: relative;
   .upper(24px);
   font-weight: normal;
+  padding-top: 30px;
+  padding-left: 90px;
+  padding-bottom: 30px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 20px;
+    top: 15px;
+  }
+
+  &--slim::before {
+    background-image: url("../img/icon-cat-slim.svg");
+  }
+
+  &--gain::before {
+    background-image: url("../img/icon-cat-pro.svg");
+  }
 }
 
 .info-block__slim-paragraph,
@@ -16,9 +43,22 @@
 .info-block__catalog {
   &--slim,
   &--pro {
+    position: relative;
     display: block;
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 22px;
+  }
+
+  &--slim::after,
+  &--pro::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 12px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 117px;
   }
 }
