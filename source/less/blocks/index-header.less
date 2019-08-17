@@ -48,3 +48,50 @@
     color: rgba(17, 17, 17, 0.3);
   }
 }
+
+@media (min-width: @tablet-width) {
+  .index-header {
+    background: none;
+  }
+
+  .index-header__title {
+    color: @black;
+    font-size: 60px;
+  }
+
+  .index-header__food {
+    width: 710px;
+    height: 610px;
+  }
+
+  .index-header__bold {
+    font-size: 20px;
+    color: @black;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .index-header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    min-height: 650px;
+    width: 720px;
+    height: 700px;
+  }
+
+  .index-header__title {
+    color: @black;
+    font-size: 60px;
+  }
+
+  .index-header__food {
+    width: 552px;
+    height: 499px;
+  }
+
+  .index-header__bold {
+    font-size: 20px;
+    color: @black;
+  }
+}

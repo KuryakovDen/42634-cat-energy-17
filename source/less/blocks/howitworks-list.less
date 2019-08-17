@@ -68,3 +68,35 @@
   }
 }
 */
+
+@media (min-width: @tablet-width) {
+  .howitworks-list {
+    display: flex;
+  }
+
+  .howitworks-list__item {
+    display: block;
+    width: 200px;
+    min-height: 228px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .howitworks-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .howitworks-list__item {
+    display: block;
+    width: 200px;
+    min-height: 228px;
+  }
+
+  /*.howitworks-list__paragraph {
+    &--leaf {
+      background-image: url("../img/advantage-clock@1x.png");
+      background-repeat: no-repeat;
+      }*/
+}

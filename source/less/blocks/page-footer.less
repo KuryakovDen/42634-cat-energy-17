@@ -1,10 +1,32 @@
 .page-footer__cooperation {
   .flex();
-  .padding(0, 20px, 0, 20px);
-  padding-top: 30px;
-  padding-bottom: 25px;
+  .padding(30px, 20px, 0, 20px);
 }
 
 .page-footer__social {
   .padding();
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 750px;
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 550px;
+    width: 100%;
+  }
+
+  .page-footer__cooperation {
+    .flex();
+    .padding(0, 90px, 0, 75px);
+  }
 }

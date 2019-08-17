@@ -36,3 +36,19 @@
   fill: @green-button;
   opacity: 0.3;
 }
+
+@media (min-width: @tablet-width) {
+  .page-social {
+    display: flex;
+    align-items: center;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-social {
+    display: flex;
+    min-height: 150px;
+  }
+}

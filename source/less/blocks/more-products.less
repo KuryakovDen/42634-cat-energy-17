@@ -1,5 +1,16 @@
 .more-products {
+  position: relative;
   .border();
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 12px;
+    background-image: url("../img/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .more-products__showmore {

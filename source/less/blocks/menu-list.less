@@ -24,3 +24,32 @@
   .center();
   padding-top: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .menu-list {
+    display: flex;
+  }
+
+  .menu-list__item {
+    width: 160px;
+    border: none;
+    background: none;
+    color: @white;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .menu-list {
+    display: flex;
+  }
+  /*
+  .menu-list__item {
+    border: none;
+    background-color: none;
+  }
+
+  .menu-list__link{
+    color: @white;
+  }*/
+}
