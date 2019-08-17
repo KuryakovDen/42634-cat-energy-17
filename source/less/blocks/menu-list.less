@@ -42,14 +42,30 @@
 @media (min-width: @desktop-width) {
   .menu-list {
     display: flex;
-  }
-  /*
-  .menu-list__item {
-    border: none;
-    background-color: none;
+    justify-content: center;
+    margin-top: 30px;
   }
 
-  .menu-list__link{
-    color: @white;
-  }*/
+  .menu-list__item {
+    margin-right: 35px;
+    font-weight: normal;
+    width: auto;
+
+    &:hover {
+      border-bottom: 2px solid @white;
+    }
+  }
+
+  .menu-list__link {
+    color: @black;
+
+    &--white {
+      color: @white;
+    }
+
+    &--active {
+      padding-bottom: 20px;
+      border-bottom: 2px solid @green-button;
+    }
+  }
 }
