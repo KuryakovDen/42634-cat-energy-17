@@ -15,3 +15,32 @@
   margin-top: 10px;
   padding-top: 170px;
 }
+
+@media (min-width: @tablet-width) {
+  .gift {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    width: 708px;
+    height: 200px;
+    margin-top: 70px;
+  }
+
+  .gift__message {
+    padding-top: 100px;
+    padding-left: 250px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift {
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    width: 245px;
+    height: 289px;
+    margin-left: -80px;
+    margin-top: 0;
+  }
+
+  .gift__message {
+    padding-top: 170px;
+    padding-left: 10px;
+  }
+}
