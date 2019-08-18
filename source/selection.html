@@ -37,60 +37,62 @@
           программу питания для вашего кота</p>
       </div>
       <form class="page-main__form selection-form" method="POST" action="https://echo.htmlacademy.ru">
-        <fieldset class="selection-form__fieldset">
-          <legend class="selection-form__legend visually-hidden">Параметры кота</legend>
-          <div class="selection-form__wrapper">
-            <div class="field">
-              <label class="field__label">
-                  Имя:*
-              </label>
-              <input class="field__input" type="text" name="cat-name" placeholder="Барсик" required>
-            </div>
-            <div class="field">
-              <label class="field__label">
-                  Вес (кг):*
-              </label>
-              <input class="field__input" type="number" name="cat-weight" placeholder="7" required>
-            </div>
-            <div class="field">
-              <label class="field__label">
-                  Возраст (лет):
-              </label>
-              <input class="field__input" type="number" name="cat-age" placeholder="7">
-            </div>
-          </div>
-        </fieldset>
-        <fieldset class="selection-form__fieldset">
-          <legend class="selection-form__legend visually-hidden">Цель программы питания</legend>
-          <div class="selection-form__wrapper">
-            <ul class="field__list">
-              <li class="field__item">
+        <div class="selection-form__container">
+          <fieldset class="selection-form__fieldset selection-form__fieldset-info">
+            <legend class="selection-form__legend visually-hidden">Параметры кота</legend>
+            <div class="selection-form__wrapper">
+              <div class="field">
                 <label class="field__label">
-                  <input class="field__input" type="radio" name="radio-button" value="slim" checked>
-                  <span class="field__span">Похудение</span>
-                  <span class="field__indicator"></span>
+                    Имя:*
                 </label>
-              </li>
-              <li class="field__item">
+                <input class="field__input" type="text" name="cat-name" placeholder="Барсик" required>
+              </div>
+              <div class="field">
                 <label class="field__label">
-                  <input class="field__input" type="radio" name="radio-button" value="fat">
-                  <span class="field__span">Набор массы</span>
-                  <span class="field__indicator"></span>
+                    Вес (кг):*
                 </label>
-              </li>
-              <li class="field__item field__item--last">
+                <input class="field__input" type="number" name="cat-weight" placeholder="7" required>
+              </div>
+              <div class="field">
                 <label class="field__label">
-                  <input class="field__input" type="radio" name="radio-button" value="idontknow">
-                  <span class="field__span">Не знаю (нужен ваш совет)</span>
-                  <span class="field__indicator"></span>
+                    Возраст (лет):
                 </label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
+                <input class="field__input" type="number" name="cat-age" placeholder="7">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="selection-form__fieldset">
+            <legend class="selection-form__legend visually-hidden">Цель программы питания</legend>
+            <div class="selection-form__wrapper">
+              <ul class="field__list">
+                <li class="field__item">
+                  <label class="field__label">
+                    <input class="field__input" type="radio" name="radio-button" value="slim" checked>
+                    <span class="field__span">Похудение</span>
+                    <span class="field__indicator"></span>
+                  </label>
+                </li>
+                <li class="field__item">
+                  <label class="field__label">
+                    <input class="field__input" type="radio" name="radio-button" value="fat">
+                    <span class="field__span">Набор массы</span>
+                    <span class="field__indicator"></span>
+                  </label>
+                </li>
+                <li class="field__item field__item--last">
+                  <label class="field__label">
+                    <input class="field__input" type="radio" name="radio-button" value="idontknow">
+                    <span class="field__span">Не знаю (нужен ваш совет)</span>
+                    <span class="field__indicator"></span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
         <fieldset class="selection-form__fieldset">
           <legend class="selection-form__legend">Контактные данные (владельца кота)</legend>
-          <div class="selection-form__wrapper form-wrapper">
+          <div class="selection-form__wrapper form-wrapper form-wrapper--flex">
             <div class="form-wrapper__block field">
               <label class="field__label">
                   E-mail:*
@@ -114,30 +116,30 @@
         <fieldset class="selection-form__fieldset">
           <legend class="selection-form__legend">Дополнительно</legend>
           <div class="selection-form__wrapper field">
-            <ul class="field__list field__list--noborder">
+            <ul class="field__list field__list-over field__list--noborder">
               <li class="field__item">
-                <label class="field__label">
+                <label class="field__label field__label-over">
                   <input class="field__input--check-on field__input--check-off" type="checkbox" name="sugar-name" value="sugar" checked>
                   <span class="field__span">Сахарозаменитель</span>
                   <span class="field__indicator"></span>
                 </label>
               </li>
               <li class="field__item">
-                <label class="field__label">
+                <label class="field__label field__label-over">
                   <input class="field__input--check-on field__input--check-off" type="checkbox" name="water-name" value="water">
                   <span class="field__span">Питьевая вода</span>
                   <span class="field__indicator"></span>
                 </label>
               </li>
               <li class="field__item">
-                <label class="field__label">
+                <label class="field__label field__label-over">
                   <input class="field__input--check-on field__input--check-off" type="checkbox" name="milk-name" value="milk">
                   <span class="field__span">Молоко</span>
                   <span class="field__indicator"></span>
                 </label>
               </li>
               <li class="field__item field__item--last">
-                <label class="field__label">
+                <label class="field__label field__label-over">
                   <input class="field__input--check-on field__input--check-off" type="checkbox" name="vitamin-name" value="vitamin">
                   <span class="field__span">Витамины</span>
                   <span class="field__indicator"></span>
@@ -146,11 +148,13 @@
             </ul>
           </div>
         </fieldset>
-        <button type="submit" class="selection-form__button">Отправить заявку</button><br>
-        <span class="selection-form__required--bottom">
-          <sup>*</sup>
-          — Обязательные поля
-        </span>
+        <div class="selection-form__case">
+          <button type="submit" class="selection-form__button">Отправить заявку</button><br>
+          <span class="selection-form__required--bottom">
+            <sup>*</sup>
+            — Обязательные поля
+          </span>
+        </div>
       </form>
     </main>
     <footer class="page-footer">

@@ -17,10 +17,16 @@
   .input-border();
   margin-bottom: 15px;
   font-size: 16px;
+  vertical-align: middle;
 
   &::placeholder {
     padding-left: 15px;
   }
+}
+
+.field__span {
+  padding: 0;
+  margin: 0;
 }
 
 .field__item {
@@ -35,4 +41,45 @@
   padding: 0;
   margin: 0;
   font-size: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .field__list-over {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .field__item {
+    &--last {
+      padding-bottom: 0;
+    }
+  }
+
+  .field__span {
+    font-size: 20px;
+  }
+
+  .field__label-over {
+    margin-right: 125px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .field__list {
+    width: 570px;
+  }
+
+  .field__item {
+    &--last {
+      padding-bottom: 25px;
+    }
+  }
+
+  .field__list-over {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }
