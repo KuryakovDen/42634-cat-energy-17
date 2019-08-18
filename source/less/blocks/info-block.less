@@ -38,6 +38,8 @@
 .info-block__gain-paragraph {
   .margin();
   margin-bottom: 23px;
+  border-bottom: 1px solid @black;
+  padding-bottom: 25px;
 }
 
 .info-block__catalog {
@@ -59,7 +61,7 @@
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: center;
-    left: 117px;
+    left: 175px;
   }
 }
 
@@ -76,5 +78,23 @@
     margin: 0;
     width: 570px;
     height: 372px;
+  }
+
+  .info-block__slim-paragraph,
+  .info-block__gain-paragraph {
+    .margin();
+    border-bottom: none;
+    font-size: 16px;
+    padding-left: 52px;
+    padding-right: 55px;
+  }
+
+  .info-block__header {
+    font-size: 36px;
+  }
+
+  .info-block__catalog--slim,
+  .info-block__catalog--pro {
+    padding-left: 70px;
   }
 }

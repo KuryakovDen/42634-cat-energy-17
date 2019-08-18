@@ -12,12 +12,17 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-    margin: 0;
     padding: 0;
+    margin: 0 auto;
     display: flex;
-    min-height: 83px;
-    width: 768px;
+    justify-content: space-between;
+    min-height: 153px;
     /*background-color: brown;*/
+    width: 768px;
+  }
+
+  .page-header__logo {
+    .margin(24px, 96px, 60px, 30px);
   }
 
   .page-navigation__burger {

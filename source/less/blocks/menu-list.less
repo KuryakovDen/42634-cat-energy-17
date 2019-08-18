@@ -28,20 +28,6 @@
 @media (min-width: @tablet-width) {
   .menu-list {
     display: flex;
-  }
-
-  .menu-list__item {
-    width: 160px;
-    border: none;
-    background: none;
-    color: @white;
-    white-space: nowrap;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .menu-list {
-    display: flex;
     justify-content: center;
     margin-top: 30px;
   }
@@ -50,6 +36,33 @@
     margin-right: 35px;
     font-weight: normal;
     width: auto;
+    border: none;
+    white-space: nowrap;
+  }
+
+  .menu-list__link {
+    color: @black;
+
+    &--active {
+      padding-bottom: 20px;
+      border-bottom: 2px solid @green-button;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .menu-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .menu-list__item {
+    margin-right: 35px;
+    font-weight: normal;
+    width: auto;
+    background: none;
+    border: none;
 
     &:hover {
       border-bottom: 2px solid @white;
