@@ -27,10 +27,14 @@
 
   &--slim::before {
     background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--gain::before {
     background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -40,6 +44,7 @@
   margin-bottom: 23px;
   border-bottom: 1px solid @black;
   padding-bottom: 25px;
+  line-height: 1.5;
 }
 
 .info-block__catalog {
@@ -65,10 +70,54 @@
   }
 }
 
-@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .info-block {
     width: 708px;
     height: 372px;
+  }
+
+  .info-block__header {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    .padding(81px, 250px, 26px, 55px);
+
+
+    &--slim::before {
+      width: 141px;
+      height: 194px;
+      left: 480px;
+      top: 80px;
+    }
+
+    &--gain::before {
+      width: 268px;
+      height: 113px;
+      left: 405px;
+      top: 150px;
+    }
+  }
+
+  .info-block__slim-paragraph,
+  .info-block__gain-paragraph {
+    width: 370px;
+    margin-left: 50px;
+    border: none;
+    font-size: 16px;
+  }
+
+  .info-block__catalog {
+    &--slim,
+    &--pro {
+      margin-left: 30px;
+      font-size: 20px;
+    }
+
+    &--slim::after,
+    &--pro::after {
+      top: 25px;
+      left: 140px;
+    }
   }
 }
 
@@ -87,14 +136,44 @@
     font-size: 16px;
     padding-left: 52px;
     padding-right: 55px;
+    margin-top: 45px;
   }
 
   .info-block__header {
+    .padding(65px, 250px, 26px, 200px);
     font-size: 36px;
+    white-space: nowrap;
+
+    &--slim::before {
+      width: 71px;
+      height: 97px;
+      left: 70px;
+      top: 40px;
+    }
+
+    &--gain::before {
+      width: 134px;
+      height: 57px;
+      left: 34px;
+      top: 60px;
+    }
   }
 
-  .info-block__catalog--slim,
+  .info-block__catalog {
+    &--slim,
+    &--pro {
+      padding-left: 40px;
+      margin-top: -10px;
+    }
+
+    &--slim::after,
+    &--pro::after {
+      top: 25px;
+      left: 160px;
+    }
+  }
+
   .info-block__catalog--pro {
-    padding-left: 70px;
+    margin-top: 10px;
   }
 }

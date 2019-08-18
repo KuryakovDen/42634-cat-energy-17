@@ -72,6 +72,8 @@
 @media (min-width: @tablet-width) {
   .howitworks-list {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .howitworks-list__item {
@@ -79,6 +81,44 @@
     width: 200px;
     min-height: 228px;
     flex-wrap: wrap;
+    margin-right: 180px;
+  }
+
+  .howitworks-list__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .howitworks-list__paragraph {
+    top: 50px;
+    left: 0;
+
+    &--leaf {
+      background-image: url("../img/after-desktop@1x.png");
+      background-size: 71px 228px;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    &--powder {
+      background-image: url("../img/after-desktop@1x.png");
+      background-size: 114px 230px;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    &--fork {
+      background-image: url("../img/after-desktop@1x.png");
+      background-size: 113px 233px;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    &--clock {
+      background-image: url("../img/after-desktop@1x.png");
+      background-size: 121px 238px;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
   }
 }
 
@@ -92,11 +132,39 @@
     display: block;
     width: 200px;
     min-height: 228px;
+    margin-right: 0;
   }
 
-  /*.howitworks-list__paragraph {
+  .howitworks-list__paragraph {
+    top: 50px;
+    left: 0;
+
     &--leaf {
-      background-image: url("../img/advantage-clock@1x.png");
+      background-image: url("../img/after-desktop@1x.png");
+      background-size: 71px 228px;
       background-repeat: no-repeat;
-      }*/
+      background-position: right;
+    }
+
+    &--powder {
+      background-image: url("../img/after-desktop@1x.png");
+      background-size: 114px 230px;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    &--fork {
+      background-image: url("../img/after-desktop@1x.png");
+      background-size: 113px 233px;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    &--clock {
+      background-image: url("../img/after-desktop@1x.png");
+      background-size: 121px 238px;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+  }
 }
