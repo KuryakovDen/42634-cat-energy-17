@@ -32,3 +32,36 @@
     margin-bottom: 34px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .selection-form__fieldset-info {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .selection-form__container {
+    display: flex;
+  }
+
+  .selection-form__fieldset-info {
+    width: 620px;
+  }
+
+  .selection-form__button {
+    width: 570px;
+    margin-right: 80px;
+  }
+
+  .selection-form__case {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
+  .selection-form__required {
+    &--bottom {
+      margin-top: 10px;
+    }
+  }
+}

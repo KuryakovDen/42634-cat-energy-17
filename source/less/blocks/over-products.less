@@ -3,6 +3,14 @@
   margin-bottom: 15px;
 }
 
+.over-products__wrapper {
+  border-bottom: 1px solid @black;
+}
+
+.over-products__wrapper-first {
+  border-top: 1px solid @black;
+}
+
 .over-products__list {
   .list-style();
 }
@@ -24,4 +32,112 @@
 
 .over-products__container {
   margin-bottom: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .over-products__wrapper-first {
+    width: 710px;
+    min-height: 140px;
+  }
+
+  .over-products__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 710px;
+    min-height: 140px;
+    border: 1px solid @grey;
+  }
+
+  .over-products__item {
+    margin: 0;
+    padding: 0;
+    margin-right: 80px;
+  }
+
+  .over-products__order {
+    width: 630px;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .over-products__table {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .over-products__tr {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+  }
+
+  .over-products__header {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .over-products__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 710px;
+    min-height: 70px;
+    border: none;
+    border-bottom: 1px solid @black;
+  }
+
+  .over-products__wrapper-first {
+    border-top: 1px solid @black;
+  }
+
+  .over-products__item {
+    margin: 0;
+    padding: 0;
+    margin-right: 80px;
+    width: 800px;
+  }
+
+  .over-products__table {
+    display: flex;
+    justify-content: space-between;
+    width: 285px;
+    margin: 0;
+  }
+
+  .over-products__tr {
+    display: flex;
+    justify-content: space-between;
+    width: 285px;
+  }
+
+  .over-products__case {
+    display: flex;
+    margin-bottom: 80px;
+    /*justify-content: space-between;*/
+  }
+
+  .over-products__order {
+    width: 245px;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .over-products__header {
+    margin-right: auto;
+    margin-left: 0;
+  }
 }

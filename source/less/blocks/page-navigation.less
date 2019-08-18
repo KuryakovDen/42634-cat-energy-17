@@ -3,3 +3,33 @@
   padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
 }
+
+@media (min-width: @tablet-width) {
+  .page-navigation {
+    display: flex;
+  }
+
+  .page-navigation__burger {
+    position: absolute;
+    .hide();
+  }
+
+  .page-navigation__wrapper {
+    width: 480px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-navigation {
+    display: flex;
+  }
+
+  .page-navigation__burger {
+    position: absolute;
+    .hide();
+  }
+
+  .page-navigation__wrapper {
+    width: 550px;
+  }
+}

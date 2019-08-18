@@ -1,3 +1,7 @@
+.logo {
+  width: 175px;
+}
+
 .logo__img {
   background-size: 100%;
   background-position: center;
@@ -8,5 +12,27 @@
 
   &:active {
     .opacity(0.6);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    width: 175px;
+  }
+
+  .logo__img {
+    width: 174px;
+    height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo {
+    width: 200px;
+  }
+
+  .logo__img {
+    width: 203px;
+    height: 60px;
   }
 }

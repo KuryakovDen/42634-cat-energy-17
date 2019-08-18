@@ -1,3 +1,18 @@
-.info-container {
-  min-height: 560px;
+/*.info-container {
+
+}*/
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+  }
 }

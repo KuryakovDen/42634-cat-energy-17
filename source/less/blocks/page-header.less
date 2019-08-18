@@ -2,9 +2,50 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  width: 100%;
 }
 
 .page-header__logo {
   width: 140px;
   .margin(11px, 60px, 15px, 20px);
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 153px;
+    /*background-color: brown;*/
+    width: 768px;
+  }
+
+  .page-header__logo {
+    .margin(24px, 96px, 60px, 30px);
+  }
+
+  .page-navigation__burger {
+    .hide();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 153px;
+    /*background-color: brown;*/
+    width: 1200px;
+  }
+
+  .page-header__logo {
+    .margin(40px, 60px, 15px, 110px);
+  }
+
+  .page-navigation__burger {
+    .hide();
+  }
 }
