@@ -1,7 +1,31 @@
 .page-navigation {
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
+
+  &--closed .page-navigation__burger::before {
+    content: "";
+
+    position: absolute;
+    top: 20px;
+    left: 15px;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: black;
+  }
+}
+
+.page-navigation__burger {
+  position: absolute;
+  display: block;
+  background: none;
+  font-size: 0;
+  width: 25px;
+  height: 20px;
+  top: 0;
 }
 
 @media (min-width: @tablet-width) {
