@@ -12,11 +12,11 @@
       <a class="page-header__logo logo" href="index.html">
         <img class="logo__img" src="img/logo-mobile-header-svg.svg" width="191" height="39" alt="Картинка кота">
       </a>
-      <nav class="page-navigation">
+      <nav class="page-navigation page-navigation--closed page-navigation--nojs">
         <button class="page-navigation__burger" type="button">Показать меню</button>
         <div class="page-navigation__wrapper">
           <ul class="page-navigation__list menu-list">
-            <li class="menu-list__item">
+            <li class="menu-list__item menu-list__item--active">
               <a class="menu-list__link" href="index.html">Главная</a>
             </li>
             <li class="menu-list__item">
@@ -44,19 +44,19 @@
                 <label class="field__label">
                     Имя:*
                 </label>
-                <input class="field__input" type="text" name="cat-name" placeholder="Барсик" required>
+                <input class="field__input field__input--name" type="text" name="cat-name" placeholder="Барсик">
               </div>
               <div class="field">
                 <label class="field__label">
                     Вес (кг):*
                 </label>
-                <input class="field__input" type="number" name="cat-weight" placeholder="7" required>
+                <input class="field__input field__input--weight" type="number" name="cat-weight" placeholder="7">
               </div>
               <div class="field">
                 <label class="field__label">
                     Возраст (лет):
                 </label>
-                <input class="field__input" type="number" name="cat-age" placeholder="7">
+                <input class="field__input field__input--age" type="number" name="cat-age" placeholder="7">
               </div>
             </div>
           </fieldset>
@@ -96,13 +96,13 @@
               <label class="field__label">
                   E-mail:*
               </label>
-              <input class="field__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required><br><br>
+              <input class="field__input field__input--email" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
             </div>
             <div class="form-wrapper__block field">
               <label class="field__label">
                   Телефон:*
               </label>
-              <input class="field__input" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required><br><br>
+              <input class="field__input field__input--phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
             </div>
           </div>
         </fieldset>
@@ -138,7 +138,7 @@
                 </label>
               </li>
               <li class="field__item field__item--last">
-                <label class="field__label field__label-over">
+                <label class="field__label field__label-over field__label-over--last">
                   <input class="field__input--check-on field__input--check-off" type="checkbox" name="vitamin-name" value="vitamin">
                   <span class="field__span">Витамины</span>
                   <span class="field__indicator"></span>
@@ -220,5 +220,23 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.page-navigation');
+      var navToggle = document.querySelector('.page-navigation__burger');
+
+      navMain.classList.remove('page-navigation--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('page-navigation--closed')) {
+          navMain.classList.remove('page-navigation--closed');
+          navMain.classList.add('page-navigation--opened');
+        } else {
+          navMain.classList.add('page-navigation--closed');
+          navMain.classList.remove('page-navigation--opened');
+        }
+      });
+    </script>
+
   </body>
 </html>

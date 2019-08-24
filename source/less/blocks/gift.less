@@ -12,8 +12,18 @@
   color: @white;
   line-height: 1.25;
   font-weight: normal;
-  margin-top: 10px;
-  padding-top: 170px;
+  margin-top: -50px;
+  padding-top: 100px;
+}
+
+.gift__svg {
+  display: block;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+.gift__path {
+  fill: @white;
 }
 
 @media (min-width: @tablet-width) {
@@ -25,8 +35,13 @@
   }
 
   .gift__message {
-    padding-top: 100px;
-    padding-left: 250px;
+    padding-top: 0;
+    padding-left: 290px;
+  }
+
+  .gift__svg {
+    display: block;
+    margin-left: 130px;
   }
 }
 
@@ -40,7 +55,13 @@
   }
 
   .gift__message {
+    margin-top: -110px;
     padding-top: 170px;
     padding-left: 10px;
+  }
+
+  .gift__svg {
+    display: block;
+    margin: 0 auto;
   }
 }
