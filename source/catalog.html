@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
+      <a class="page-header__logo logo logo logo--opened logo--nojs" href="index.html">
         <img class="logo__img" src="img/logo-mobile-header-svg.svg" width="191" height="39" alt="Картинка кота">
+        <button class="logo__burger" type="button">Показать меню</button>
       </a>
       <nav class="page-navigation page-navigation--closed page-navigation--nojs">
-        <button class="page-navigation__burger" type="button">Показать меню</button>
         <div class="page-navigation__wrapper">
           <ul class="page-navigation__list menu-list">
             <li class="menu-list__item menu-list__item--active">
@@ -280,10 +280,10 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__cooperation footer-block">
+      <div class="page-footer__cooperation footer-block footer-block--white">
         <b class="footer-block__invitation">приглашаем <br> к сотрудничеству <br> дилеров!</b>
         <address class="footer-block__address">ул. Большая <br>
-          Конюшенная, д. 19/8 <br>
+          Конюшенная, д. 19/8 <br><br>
           Санкт-Петербург
         </address>
       </div>
@@ -293,8 +293,8 @@
           <img class="page-social__img" src="img/logo-footer.svg" width="128" height="24" alt="Картинка логотипа">
         </a>
         <div class="page-social__icons">
-          <a class="page-social__links page-social__links--vk" href="https://vk.com/htmlacademy" aria-label="Иконка Вконтакте">
-            <svg width="22" height="12" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <a class="page-social__links" href="https://vk.com/htmlacademy" aria-label="Иконка Вконтакте">
+            <svg class="page-social__icon page-social__icon--vk" width="22" height="12" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
             <path class="page-social__links-path" fill="#666666" d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
             c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4h-1.4c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
@@ -311,8 +311,8 @@
             c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z"/>
             </svg>
           </a>
-          <a class="page-social__links page-social__links--inst" href="https://www.instagram.com/htmlacademy/" aria-label="Иконка Инстаграмм">
-            <svg width="17" height="17" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <a class="page-social__links" href="https://www.instagram.com/htmlacademy/" aria-label="Иконка Инстаграмм">
+            <svg class="page-social__icon page-social__icon--inst" width="17" height="17" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 16.1 16" style="enable-background:new 0 0 16.1 16;" xml:space="preserve">
             <style type="text/css">
               .st0{fill:#231F20;}
@@ -324,8 +324,8 @@
             <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
             </svg>
           </a>
-          <a class="page-social__links page-social__links--fb" href="https://www.facebook.com/HTML-Academy-795303870667279/" aria-label="Иконка Фейсбук">
-            <svg width="10" height="19" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <a class="page-social__links" href="https://www.facebook.com/HTML-Academy-795303870667279/" aria-label="Иконка Фейсбук">
+            <svg class="page-social__icon page-social__icon--fb" width="10" height="19" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
             <path class="page-social__links-path" fill="#666666" d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
             h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
@@ -336,7 +336,7 @@
         <div class="page-social__academy academy-info">
           <h2 class="academy-info__header">HTML Academy</h2>
           <a class="academy-info__link" href="https://htmlacademy.ru" aria-label="Иконка HTML Academy">
-            <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+            <svg class="page-social__svg" width="40" height="47" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
               <path class="page-social__links-path" fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
             </svg>
           </a>
@@ -345,18 +345,18 @@
     </footer>
 
     <script>
-      var navMain = document.querySelector('.page-navigation');
-      var navToggle = document.querySelector('.page-navigation__burger');
+      var navMain = document.querySelector('.logo');
+      var navToggle = document.querySelector('.logo__burger');
 
-      navMain.classList.remove('page-navigation--nojs');
+      navMain.classList.remove('logo--nojs');
 
       navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('page-navigation--closed')) {
-          navMain.classList.remove('page-navigation--closed');
-          navMain.classList.add('page-navigation--opened');
+        if (navMain.classList.contains('logo--closed')) {
+          navMain.classList.remove('logo--closed');
+          navMain.classList.add('logo--opened');
         } else {
-          navMain.classList.add('page-navigation--closed');
-          navMain.classList.remove('page-navigation--opened');
+          navMain.classList.add('logo--closed');
+          navMain.classList.remove('logo--opened');
         }
       });
     </script>
