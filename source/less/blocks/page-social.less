@@ -6,6 +6,7 @@
 .page-social__icons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 130px;
   margin: auto;
 }
@@ -28,11 +29,16 @@
   }
 }
 
-.page-social__links-path:hover {
+.page-social__svg {
+  width: 40px;
+  height: 47px;
+}
+
+.page-social__icon path:hover {
   fill: @green-button;
 }
 
-.page-social__links-path:active {
+.page-social__icon path:active {
   fill: @green-button;
   opacity: 0.3;
 }
@@ -43,6 +49,23 @@
     align-items: center;
     padding-left: 110px;
     padding-right: 110px;
+  }
+
+  .page-social__icon {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
   }
 }
 

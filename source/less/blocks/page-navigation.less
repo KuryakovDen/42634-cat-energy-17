@@ -1,4 +1,5 @@
 .page-navigation {
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
@@ -9,11 +10,6 @@
     display: flex;
   }
 
-  .page-navigation__burger {
-    position: absolute;
-    .hide();
-  }
-
   .page-navigation__wrapper {
     width: 480px;
   }
@@ -22,11 +18,6 @@
 @media (min-width: @desktop-width) {
   .page-navigation {
     display: flex;
-  }
-
-  .page-navigation__burger {
-    position: absolute;
-    .hide();
   }
 
   .page-navigation__wrapper {

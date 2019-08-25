@@ -22,6 +22,26 @@
   &::placeholder {
     padding-left: 15px;
   }
+
+  &--name {
+    width: 224px;
+  }
+
+  &--weight {
+    width: 205px;
+  }
+
+  &--age {
+    width: 176px;
+  }
+
+  &--email {
+    width: 214px;
+  }
+
+  &--phone {
+    width: 199px;
+  }
 }
 
 .field__span {
@@ -33,7 +53,7 @@
   padding-top: -25px;
 
   &--last {
-    padding-bottom: 25px;
+    /*padding-bottom: 25px;*/
   }
 }
 
@@ -44,14 +64,22 @@
 }
 
 @media (min-width: @tablet-width) {
+  .field__list {
+    width: 630px;
+  }
+
   .field__list-over {
+    min-height: 120px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 40px;
   }
 
   .field__item {
+    margin-right: 100px;
+
     &--last {
       padding-bottom: 0;
     }
@@ -61,8 +89,37 @@
     font-size: 20px;
   }
 
+  .field__label {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+
   .field__label-over {
-    margin-right: 125px;
+    &--last {
+      margin-right: 52px;
+    }
+  }
+
+  .field__input {
+    &--name {
+      width: 558px;
+    }
+
+    &--weight {
+      width: 530px;
+    }
+
+    &--age {
+      width: 490px;
+    }
+
+    &--email {
+      width: 550px;
+    }
+
+    &--phone {
+      width: 530px;
+    }
   }
 }
 
@@ -73,13 +130,42 @@
 
   .field__item {
     &--last {
-      padding-bottom: 25px;
+      padding-bottom: 0;
     }
   }
 
   .field__list-over {
+    width: 1000px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .field__label-over {
+    margin-right: 0;
+  }
+
+  .field__input {
+    &--name {
+      width: 499px;
+    }
+
+    &--weight {
+      width: 470px;
+    }
+
+    &--age {
+      width: 430px;
+    }
+
+    &--email {
+      width: 485px;
+      margin-right: 60px;
+    }
+
+    &--phone {
+      width: 470px;
+    }
   }
 }
