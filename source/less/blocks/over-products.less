@@ -81,13 +81,35 @@
   }
 
   .over-products__header {
+    font-size: 20px;
     margin-left: 40px;
   }
 
   .over-products__title {
+    position: relative;
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 75px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: @green-button;
+      height: 3px;
+      margin-top: 20px;
+      left: -250px;
+      width: 210px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: @green-button;
+      margin-left: 40px;
+      margin-top: 20px;
+      width: 100vw;
+      height: 3px;
+    }
   }
 }
 
@@ -96,10 +118,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 710px;
+    width: 890px;
     min-height: 70px;
     border: none;
     border-bottom: 1px solid @lightgrey;
+    margin-right: 80px;
   }
 
   .over-products__wrapper-first {
@@ -145,5 +168,14 @@
   .over-products__header {
     margin-right: auto;
     margin-left: 0;
+  }
+
+  .over-products__list {
+    display: block;
+    width: 900px;
+  }
+
+  .over-products__container {
+    margin-left: 80px;
   }
 }

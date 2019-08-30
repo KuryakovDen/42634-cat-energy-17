@@ -3,6 +3,7 @@
   .margin();
   text-align: center;
   margin-bottom: 45px;
+  margin-top: 40px;
 }
 
 .example__paragraph {
@@ -22,12 +23,169 @@
   .padding(31px, 44px, 35px, 20px);
 }
 
+.example__container {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.example__item {
+  position: relative;
+  width: 125px;
+  height: 55px;
+  border: 1px solid #cdcdcd;
+  font-size: 12px;
+  white-space: normal;
+}
+
+.example__status {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.example__range {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85px;
+  height: 15px;
+  border-radius: 6px;
+  border: solid 1px #cdcdcd;
+}
+
+.example__scale {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: @green-button;
+  margin-left: 5px;
+}
+
+.example__label {
+  .upper();
+  font-size: 16px;
+  line-height: 1.25;
+
+  &--before {
+    margin-right: 20px;
+  }
+
+  &--after {
+    margin-left: 20px;
+  }
+}
+
+.example__button {
+  display: none;
+}
+
+.example__item--weight {
+  &::before {
+    position: absolute;
+    content: "снижение веса";
+    top: 47px;
+    left: 30px;
+  }
+}
+
+.example__item--days {
+  &::after {
+    position: absolute;
+    content: "затрачено времени";
+    top: 47px;
+    left: 20px;
+  }
+}
+
+.example__info {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 14px;
+}
+
 @media (min-width: @tablet-width) {
-  /*ddd*/
+  .example__container {
+    width: 370px;
+  }
+
+  .example__item {
+    width: 160px;
+    height: 70px;
+    font-size: 14px;
+  }
+
+  .example__info {
+    font-size: 30px;
+  }
+
+  .example__item--weight {
+    &::before {
+      top: 61px;
+      left: 42px;
+    }
+  }
+
+  .example__item--days {
+    &::after {
+      top: 76px;
+      left: 27px;
+    }
+  }
+
+  .example__range {
+    width: 430px;
+    height: 6px;
+    background-color: #dcdcdc;
+  }
+
+  .example__label {
+    font-size: 20px;
+    line-height: 1;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted @greybrown;
+
+    &--before {
+      margin-right: 25px;
+    }
+  }
+
+  .example__scale {
+    .hide();
+  }
+
+  .example__button {
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 50%;
+    left: 50%;
+    margin-top: -47px;
+    margin-left: -17px;
+    background-color: @white;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      top: 12px;
+      left: 12px;
+      background-color: @green-button;
+      border-radius: 50%;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .example__paragraph {
+    width: 430px;
     font-size: 16px;
   }
 
