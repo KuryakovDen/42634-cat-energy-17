@@ -31,6 +31,8 @@
 }
 
 .over-products__container {
+  width: 280px;
+  height: 289px;
   margin-bottom: 35px;
 }
 
@@ -48,6 +50,11 @@
     width: 710px;
     min-height: 140px;
     border: 1px solid @lightgrey;
+  }
+
+  .over-products__container {
+    width: 708px;
+    height: 200px;
   }
 
   .over-products__item {
@@ -81,13 +88,35 @@
   }
 
   .over-products__header {
+    font-size: 20px;
     margin-left: 40px;
   }
 
   .over-products__title {
+    position: relative;
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 75px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: @green-button;
+      height: 3px;
+      margin-top: 20px;
+      left: -250px;
+      width: 210px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: @green-button;
+      margin-left: 40px;
+      margin-top: 20px;
+      width: 100vw;
+      height: 3px;
+    }
   }
 }
 
@@ -96,10 +125,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 710px;
+    width: 870px;
     min-height: 70px;
     border: none;
     border-bottom: 1px solid @lightgrey;
+    margin-right: 70px;
   }
 
   .over-products__wrapper-first {
@@ -129,7 +159,7 @@
   .over-products__case {
     display: flex;
     margin-bottom: 80px;
-    /*justify-content: space-between;*/
+    margin-left: 0;
   }
 
   .over-products__order {
@@ -145,5 +175,17 @@
   .over-products__header {
     margin-right: auto;
     margin-left: 0;
+  }
+
+  .over-products__list {
+    margin-left: 0;
+    display: block;
+    width: 900px;
+  }
+
+  .over-products__container {
+    width: 245px;
+    height: 289px;
+    margin-left: 80px;
   }
 }

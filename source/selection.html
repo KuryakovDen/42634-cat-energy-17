@@ -10,7 +10,11 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo logo logo logo--opened logo--nojs" href="index.html">
-        <img class="logo__img" src="img/logo-mobile-header-svg.svg" width="191" height="39" alt="Картинка кота">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
+          <img class="logo__img" src="img/logo-mobile-header-svg.svg" width="191" height="39" alt="Картинка кота">
+        </picture>
         <button class="logo__burger" type="button">Показать меню</button>
       </a>
       <nav class="page-navigation page-navigation--closed page-navigation--nojs">
@@ -66,23 +70,23 @@
               <ul class="field__list">
                 <li class="field__item">
                   <label class="field__label">
-                    <input class="field__input" type="radio" name="radio-button" value="slim" checked>
-                    <span class="field__span">Похудение</span>
+                    <input class="field__input visually-hidden" type="radio" name="radio-button" value="slim" checked>
                     <span class="field__indicator"></span>
+                    <span class="field__span">Похудение</span>
                   </label>
                 </li>
                 <li class="field__item">
                   <label class="field__label">
-                    <input class="field__input" type="radio" name="radio-button" value="fat">
-                    <span class="field__span">Набор массы</span>
+                    <input class="field__input visually-hidden" type="radio" name="radio-button" value="fat">
                     <span class="field__indicator"></span>
+                    <span class="field__span">Набор массы</span>
                   </label>
                 </li>
                 <li class="field__item field__item--last">
                   <label class="field__label">
-                    <input class="field__input" type="radio" name="radio-button" value="idontknow">
-                    <span class="field__span">Не знаю (нужен ваш совет)</span>
+                    <input class="field__input visually-hidden" type="radio" name="radio-button" value="idontknow">
                     <span class="field__indicator"></span>
+                    <span class="field__span">Не знаю (нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
@@ -118,30 +122,30 @@
             <ul class="field__list field__list-over field__list--noborder">
               <li class="field__item">
                 <label class="field__label field__label-over">
-                  <input class="field__input--check-on field__input--check-off" type="checkbox" name="sugar-name" value="sugar" checked>
+                  <input class="field__input--check-on field__input--check-off visually-hidden" type="checkbox" name="sugar-name" value="sugar" checked>
+                  <span class="field__indicator"></span>
                   <span class="field__span">Сахарозаменитель</span>
-                  <span class="field__indicator"></span>
                 </label>
               </li>
               <li class="field__item">
                 <label class="field__label field__label-over">
-                  <input class="field__input--check-on field__input--check-off" type="checkbox" name="water-name" value="water">
+                  <input class="field__input--check-on field__input--check-off visually-hidden" type="checkbox" name="water-name" value="water">
+                  <span class="field__indicator"></span>
                   <span class="field__span">Питьевая вода</span>
-                  <span class="field__indicator"></span>
                 </label>
               </li>
               <li class="field__item">
                 <label class="field__label field__label-over">
-                  <input class="field__input--check-on field__input--check-off" type="checkbox" name="milk-name" value="milk">
-                  <span class="field__span">Молоко</span>
+                  <input class="field__input--check-on field__input--check-off visually-hidden" type="checkbox" name="milk-name" value="milk">
                   <span class="field__indicator"></span>
+                  <span class="field__span">Молоко</span>
                 </label>
               </li>
               <li class="field__item field__item--last">
                 <label class="field__label field__label-over field__label-over--last">
-                  <input class="field__input--check-on field__input--check-off" type="checkbox" name="vitamin-name" value="vitamin">
-                  <span class="field__span">Витамины</span>
+                  <input class="field__input--check-on field__input--check-off visually-hidden" type="checkbox" name="vitamin-name" value="vitamin">
                   <span class="field__indicator"></span>
+                  <span class="field__span">Витамины</span>
                 </label>
               </li>
             </ul>
@@ -157,7 +161,7 @@
       </form>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__cooperation footer-block footer-block--white">
+      <div class="page-footer__cooperation footer-block">
         <b class="footer-block__invitation">приглашаем <br> к сотрудничеству <br> дилеров!</b>
         <address class="footer-block__address">ул. Большая <br>
           Конюшенная, д. 19/8 <br><br>

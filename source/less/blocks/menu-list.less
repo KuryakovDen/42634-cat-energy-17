@@ -44,8 +44,13 @@
     color: @black;
 
     &--active {
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       border-bottom: 2px solid @green-button;
+    }
+
+    &:hover {
+      border-bottom: 2px solid @white;
+      padding-bottom: 10px;
     }
   }
 }
@@ -63,10 +68,6 @@
     width: auto;
     background: none;
     border: none;
-
-    &:hover {
-      border-bottom: 2px solid @white;
-    }
   }
 
   .menu-list__link {
@@ -76,13 +77,8 @@
       color: @white;
     }
 
-    &--active {
-      padding-bottom: 20px;
-      border-bottom: 2px solid @green-button;
-    }
-
     &--white-active {
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       border-bottom: 2px solid @white;
     }
   }

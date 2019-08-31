@@ -1,7 +1,68 @@
 .field__label {
+  position: relative;
   .upper();
   line-height: 1;
   margin-right: 15px;
+}
+
+.field__list .field__label {
+  display: block;
+  margin-bottom: 26px;
+  margin-left: 20px;
+
+  &:first-child {
+    margin-top: 30px;
+  }
+}
+
+
+.field__label input[type="radio"] + .field__indicator {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/icon-tick.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.field__label input[type="radio"]:not(:checked) + .field__indicator {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  border: 1px solid @grey;
+  background-image: none;
+  background-size: 100%;
+  background-position: center;
+}
+
+.field__label input[type="checkbox"]:checked + .field__indicator {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/icon-tick.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.field__label input[type="checkbox"]:not(:checked) + .field__indicator {
+  background-image: none;
+  border: 1px solid #cdcdcd;
+}
+
+.field__indicator {
+  width: 40px;
+  height: 40px;
 }
 
 .field__list {
@@ -37,16 +98,25 @@
 
   &--email {
     width: 214px;
+    background-image: url("../img/icon-mail.svg");
+    background-size: 18px 18px;
+    background-position: 183px center;
+    background-repeat: no-repeat;
   }
 
   &--phone {
     width: 199px;
+    background-image: url("../img/icon-phone.svg");
+    background-size: 21px 21px;
+    background-position: 170px center;
+    background-repeat: no-repeat;
   }
 }
 
 .field__span {
   padding: 0;
   margin: 0;
+  margin-left: 35px;
 }
 
 .field__item {
@@ -78,7 +148,7 @@
   }
 
   .field__item {
-    margin-right: 100px;
+    margin-right: 80px;
 
     &--last {
       padding-bottom: 0;
@@ -92,6 +162,16 @@
   .field__label {
     font-size: 20px;
     white-space: nowrap;
+  }
+
+  .field__list .field__label {
+    margin-bottom: 35px;
+    margin-left: 30px;
+
+    &:first-child {
+      margin-left: 0;
+      margin-top: 35px;
+    }
   }
 
   .field__label-over {
@@ -115,10 +195,12 @@
 
     &--email {
       width: 550px;
+      background-position: 510px center;
     }
 
     &--phone {
       width: 530px;
+      background-position: 490px center;
     }
   }
 }
@@ -126,20 +208,29 @@
 @media (min-width: @desktop-width) {
   .field__list {
     width: 570px;
+    box-sizing: border-box;
   }
 
   .field__item {
+    margin-right: 50px;
+
     &--last {
       padding-bottom: 0;
     }
   }
 
   .field__list-over {
-    width: 1000px;
+    width: 1100px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     box-sizing: border-box;
+  }
+
+  .field__list .field__label {
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 35px;
   }
 
   .field__label-over {
@@ -147,6 +238,8 @@
   }
 
   .field__input {
+    margin-bottom: 24px;
+
     &--name {
       width: 499px;
     }
@@ -162,10 +255,12 @@
     &--email {
       width: 485px;
       margin-right: 60px;
+      background-position: 445px center;
     }
 
     &--phone {
       width: 470px;
+      background-position: 435px center;
     }
   }
 }
