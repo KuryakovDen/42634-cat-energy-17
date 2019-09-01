@@ -15,31 +15,33 @@
   }
 }
 
-
 .field__label input[type="radio"] + .field__indicator {
   position: absolute;
   content: "";
   top: 0;
-  left: 0;
-  width: 27px;
-  height: 23px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
   background-image: url("../img/icon-tick.svg");
-  background-size: 100%;
+  background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
 }
 
 .field__label input[type="radio"]:not(:checked) + .field__indicator {
   position: absolute;
   content: "";
   top: 0;
-  left: 0;
-  width: 27px;
-  height: 23px;
-  border: 1px solid @grey;
+  left: 20px;
+  width: 30px;
+  height: 30px;
   background-image: none;
   background-size: 100%;
   background-position: center;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
 }
 
 .field__label input[type="checkbox"]:checked + .field__indicator {
@@ -47,16 +49,23 @@
   content: "";
   top: 0;
   left: 0;
-  width: 27px;
-  height: 23px;
+  width: 30px;
+  height: 30px;
   background-image: url("../img/icon-tick.svg");
-  background-size: 100%;
+  background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
+  border: 1px solid #cdcdcd;
 }
 
 .field__label input[type="checkbox"]:not(:checked) + .field__indicator {
-  background-image: none;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: none;
   border: 1px solid #cdcdcd;
 }
 
@@ -114,9 +123,11 @@
 }
 
 .field__span {
+  display: block;
   padding: 0;
   margin: 0;
-  margin-left: 35px;
+  margin-left: 75px;
+  padding-top: 10px;
 }
 
 .field__item {
@@ -170,7 +181,6 @@
 
     &:first-child {
       margin-left: 0;
-      margin-top: 35px;
     }
   }
 
@@ -202,6 +212,14 @@
       width: 530px;
       background-position: 490px center;
     }
+  }
+
+  .field__label input[type="radio"] + .field__indicator,
+  .field__label input[type="radio"]:not(:checked) + .field__indicator,
+  .field__label input[type="checkbox"]:checked + .field__indicator,
+  .field__label input[type="checkbox"]:not(:checked) + .field__indicator {
+    width: 40px;
+    height: 40px;
   }
 }
 
