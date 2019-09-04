@@ -7,12 +7,28 @@
 
 .field__list .field__label {
   display: block;
-  margin-bottom: 26px;
-  margin-left: 20px;
+  margin-bottom: 45px;
 
   &:first-child {
     margin-top: 30px;
   }
+}
+
+.field__svg {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  fill: @green-button;
+}
+
+.field__circle {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: @green-button;
+  margin: 0 auto;
+  margin-top: 9px;
 }
 
 .field__label input[type="radio"] + .field__indicator {
@@ -22,7 +38,7 @@
   left: 20px;
   width: 30px;
   height: 30px;
-  background-image: url("../img/icon-tick.svg");
+  /*background-image: url("../img/icon-tick.svg");*/
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,7 +67,7 @@
   left: 0;
   width: 30px;
   height: 30px;
-  background-image: url("../img/icon-tick.svg");
+  /*background-image: url("../img/icon-tick.svg");*/
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,7 +90,18 @@
   height: 40px;
 }
 
+.field__label input[type="radio"]:checked ~ .field__circle {
+  display: block;
+}
+
+.field__label input[type="radio"]:not(:checked) ~ .field__circle {
+  display: none;
+}
+
 .field__list {
+  height: auto;
+  display: flex;
+  flex-direction: column;
   .list-style();
   .border();
 
@@ -130,22 +157,28 @@
   padding-top: 10px;
 }
 
+.field__span-check {
+  position: absolute;
+  display: block;
+  top: 10px;
+  padding: 0;
+}
+
 .field__item {
   padding-top: -25px;
 
   &--last {
     /*padding-bottom: 25px;*/
   }
-}
 
-.field-span {
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
+  &--radio {
+    width: 280px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .field__list {
+    flex-direction: column;
     width: 630px;
   }
 
@@ -153,6 +186,7 @@
     min-height: 120px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
@@ -177,7 +211,7 @@
 
   .field__list .field__label {
     margin-bottom: 35px;
-    margin-left: 30px;
+
 
     &:first-child {
       margin-left: 0;
@@ -185,6 +219,8 @@
   }
 
   .field__label-over {
+    position: relative;
+
     &--last {
       margin-right: 52px;
     }
@@ -221,10 +257,17 @@
     width: 40px;
     height: 40px;
   }
+
+  .field__circle {
+    width: 18px;
+    height: 18px;
+    margin-top: 11px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .field__list {
+    flex-direction: column;
     width: 570px;
     box-sizing: border-box;
   }
@@ -240,6 +283,7 @@
   .field__list-over {
     width: 1100px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
     box-sizing: border-box;
