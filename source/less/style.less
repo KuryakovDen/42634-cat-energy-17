@@ -45,10 +45,10 @@
 
 body {
   padding: 0;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   line-height: auto;
   font-family: "Oswald", "Arial", sans-serif;
-  width: 320px;
+  /*width: 320px;*/
   /*border: 2px solid black;*/
   /*letter-spacing: 0.05em;*/
 }
@@ -85,14 +85,35 @@ svg {
   margin: 0;
 }
 
+.size-container {
+  width: 320px;
+  margin: 0 auto;
+}
+
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {
   body {
     min-width: @tablet-width;
+  }
+
+  .size-container {
+    width: 768px;
   }
 }
 
 @media (min-width: @desktop-width) {
   body {
     min-width: @desktop-width;
+  }
+
+  .size-container {
+    width: 1220px;
+
+    &--big {
+      width: 1300px;
+    }
+
+    &--desktop {
+      width: auto;
+    }
   }
 }

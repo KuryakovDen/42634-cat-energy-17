@@ -7,39 +7,57 @@
 
 .field__list .field__label {
   display: block;
-  margin-bottom: 26px;
-  margin-left: 20px;
+  margin-bottom: 45px;
 
   &:first-child {
     margin-top: 30px;
   }
 }
 
+.field__svg {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  fill: @green-button;
+}
+
+.field__circle {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: @green-button;
+  margin: 0 auto;
+  margin-top: 9px;
+}
 
 .field__label input[type="radio"] + .field__indicator {
   position: absolute;
   content: "";
   top: 0;
-  left: 0;
-  width: 27px;
-  height: 23px;
-  background-image: url("../img/icon-tick.svg");
-  background-size: 100%;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  /*background-image: url("../img/icon-tick.svg");*/
+  background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
 }
 
 .field__label input[type="radio"]:not(:checked) + .field__indicator {
   position: absolute;
   content: "";
   top: 0;
-  left: 0;
-  width: 27px;
-  height: 23px;
-  border: 1px solid @grey;
+  left: 20px;
+  width: 30px;
+  height: 30px;
   background-image: none;
   background-size: 100%;
   background-position: center;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
 }
 
 .field__label input[type="checkbox"]:checked + .field__indicator {
@@ -47,16 +65,23 @@
   content: "";
   top: 0;
   left: 0;
-  width: 27px;
-  height: 23px;
-  background-image: url("../img/icon-tick.svg");
-  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  /*background-image: url("../img/icon-tick.svg");*/
+  background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
+  border: 1px solid #cdcdcd;
 }
 
 .field__label input[type="checkbox"]:not(:checked) + .field__indicator {
-  background-image: none;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: none;
   border: 1px solid #cdcdcd;
 }
 
@@ -65,7 +90,18 @@
   height: 40px;
 }
 
+.field__label input[type="radio"]:checked ~ .field__circle {
+  display: block;
+}
+
+.field__label input[type="radio"]:not(:checked) ~ .field__circle {
+  display: none;
+}
+
 .field__list {
+  height: auto;
+  display: flex;
+  flex-direction: column;
   .list-style();
   .border();
 
@@ -114,9 +150,18 @@
 }
 
 .field__span {
+  display: block;
   padding: 0;
   margin: 0;
-  margin-left: 35px;
+  margin-left: 75px;
+  padding-top: 10px;
+}
+
+.field__span-check {
+  position: absolute;
+  display: block;
+  top: 10px;
+  padding: 0;
 }
 
 .field__item {
@@ -125,16 +170,15 @@
   &--last {
     /*padding-bottom: 25px;*/
   }
-}
 
-.field-span {
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
+  &--radio {
+    width: 280px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .field__list {
+    flex-direction: column;
     width: 630px;
   }
 
@@ -142,6 +186,7 @@
     min-height: 120px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
@@ -166,15 +211,16 @@
 
   .field__list .field__label {
     margin-bottom: 35px;
-    margin-left: 30px;
+
 
     &:first-child {
       margin-left: 0;
-      margin-top: 35px;
     }
   }
 
   .field__label-over {
+    position: relative;
+
     &--last {
       margin-right: 52px;
     }
@@ -203,10 +249,25 @@
       background-position: 490px center;
     }
   }
+
+  .field__label input[type="radio"] + .field__indicator,
+  .field__label input[type="radio"]:not(:checked) + .field__indicator,
+  .field__label input[type="checkbox"]:checked + .field__indicator,
+  .field__label input[type="checkbox"]:not(:checked) + .field__indicator {
+    width: 40px;
+    height: 40px;
+  }
+
+  .field__circle {
+    width: 18px;
+    height: 18px;
+    margin-top: 11px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .field__list {
+    flex-direction: column;
     width: 570px;
     box-sizing: border-box;
   }
@@ -222,6 +283,7 @@
   .field__list-over {
     width: 1100px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
     box-sizing: border-box;

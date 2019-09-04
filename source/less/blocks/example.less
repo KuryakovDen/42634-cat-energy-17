@@ -17,6 +17,12 @@
 
 .example__different-cat {
   margin-bottom: 35px;
+  max-width: none;
+
+  &--none {
+    display: none;
+    margin-left: -100px;
+  }
 }
 
 .example__header {
@@ -107,9 +113,21 @@
 }
 
 @media (min-width: @tablet-width) {
+  .example {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: @grey;
+  }
+
   .example__container {
     width: 370px;
     margin-left: 30px;
+    margin-bottom: 260px;
+  }
+
+  .example__toogle-container {
+    width: 600px;
+    margin-left: 400px;
   }
 
   .example__item {
@@ -136,10 +154,26 @@
     }
   }
 
+  .example__toogle,
+  .example__status {
+    background-color: @grey;
+  }
+
+  .example__toogle {
+    display: flex;
+    width: 650px;
+    margin: 0;
+  }
+
   .example__range {
     width: 430px;
     height: 6px;
     background-color: #dcdcdc;
+  }
+
+  .example__header {
+    position: absolute;
+    top: -100px;
   }
 
   .example__label {
@@ -159,16 +193,19 @@
 
   .example__paragraph {
     width: 670px;
+    padding-top: 60px;
     margin-left: 30px;
+    margin-bottom: 55px;
   }
 
   .example__textcost {
     width: 175px;
     font-size: 20px;
     margin: 0;
-    margin-top: -70px;
+    margin-top: -325px;
     margin-left: 500px;
     margin-right: 30px;
+    margin-bottom: 265px;
     text-align: right;
     min-height: 50px;
   }
@@ -199,13 +236,38 @@
     }
   }
 
-  .example__different-cat {
-    margin-top: 100px;
+  .example__text-wrapper {
+    position: relative;
+    background-color: @white;
   }
 
-  .example__wrapper {
-    background-color: @white;
-    margin-bottom: 265px;
+  .example__different-cat {
+    &--none {
+      display: block;
+    }
+  }
+
+  .example__toogle-item {
+    display: block;
+    height: 500px;
+
+    &--before {
+      width: 365px;
+      margin-left: 40px;
+      z-index: 1;
+    }
+
+    &--after {
+      width: 500px;
+      margin-left: -100px;
+      /*background-color: #eaeaea;*/
+      z-index: 2;
+    }
+  }
+
+  .example__toogle-wrapper {
+    position: relative;
+    display: flex;
   }
 }
 
@@ -216,6 +278,40 @@
   }
 
   .example__textcost {
+    width: 300px;
+    position: absolute;
+    left: -450px;
+    bottom: -380px;
+    text-align: center;
     font-size: 20px;
+    z-index: 2;
+  }
+
+  .example__toogle {
+    min-height: 350px;
+  }
+
+  .example__container {
+    margin-bottom: 0;
+  }
+
+  .example__text-wrapper {
+    position: absolute;
+    background-color: @grey;
+  }
+
+  .example__toogle-item {
+    display: block;
+
+    &--before {
+      left: 0;
+      z-index: 1;
+    }
+
+    &--after {
+      left: 50px;
+      /*background-color: #eaeaea;*/
+      z-index: 2;
+    }
   }
 }

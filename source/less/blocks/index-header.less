@@ -26,6 +26,7 @@
 }
 
 .index-header__title {
+  width: 320px;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -34,6 +35,7 @@
 }
 
 .index-header__bold {
+  width: 320px;
   .upper();
 }
 
@@ -65,29 +67,37 @@
 
 @media (min-width: @tablet-width) {
   .index-header {
+    position: relative;
     background: none;
     margin-top: 80px;
   }
 
   .index-header__title {
+    width: @tablet-width;
+    display: block;
+    position: absolute;
     padding: 0;
     margin: 0;
     color: @black;
     font-size: 60px;
-    margin-top: -100px;
-    margin-left: -300px;
+    left: 27px;
+    top: -110px;
+    text-align: left;
   }
 
   .index-header__food {
     width: 710px;
     height: 610px;
+    margin-top: 80px;
+    margin-left: -60px;
   }
 
   .index-header__bold {
+    position: absolute;
+    left: 27px;
+    top: 40px;
     font-size: 20px;
     color: @black;
-    margin-top: 40px;
-    margin-left: -430px;
   }
 
   .index-header__selection {
@@ -95,10 +105,10 @@
     width: 245px;
     height: 52px;
     font-size: 20px;
-    margin-top: -590px;
     margin-left: 30px;
     padding-top: 15px;
     box-sizing: border-box;
+    top: 100px;
   }
 }
 
@@ -132,26 +142,30 @@
 
 
   .index-header__title {
-    margin-top: 180px;
+    width: @desktop-width;
+    position: relative;
+    margin-top: 270px;
     margin-left: 0;
   }
 
   .index-header__food {
     position: absolute;
     top: 100px;
-    right: 470px;
+    right: 280px;
     width: 552px;
     height: 499px;
   }
 
   .index-header__bold {
+    position: absolute;
+    top: 320px;
     margin-left: 0;
   }
 
   .index-header__selection {
-    position: relative;
+    position: absolute;
     padding-top: 15px;
-    left: -30px;
-    margin-top: 50px;
+    top: 380px;
+    left: -3px;
   }
 }
