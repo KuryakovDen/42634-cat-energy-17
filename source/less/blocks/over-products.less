@@ -4,6 +4,7 @@
 }
 
 .over-products__wrapper {
+  margin-top: 35px;
   border-bottom: 1px solid @lightgrey;
 }
 
@@ -16,9 +17,21 @@
 }
 
 .over-products__header {
+  display: block;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   .upper(16px);
   text-align: left;
   font-weight: normal;
+
+  &--top {
+    margin-top: -22px;
+  }
+
+  &--last {
+    margin-top: -28px;
+  }
 }
 
 .over-products__table {
@@ -28,11 +41,35 @@
 .over-products__tr {
   .arial();
   line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.over-products__center {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.over-products__title {
+  width: 100px;
+  white-space: nowrap;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: @green-button;
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 10vw;
+    height: 3px;
+  }
 }
 
 .over-products__container {
   width: 280px;
   height: 289px;
+  margin-top: 40px;
   margin-bottom: 35px;
 }
 

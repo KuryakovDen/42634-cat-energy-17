@@ -1,6 +1,8 @@
 .more-products {
   position: relative;
   .border();
+  min-height: 210px;
+  margin-bottom: 30px;
 
   &::before {
     position: absolute;
@@ -17,12 +19,14 @@
   .grey-button();
   background-color: @grey;
   color: @greybrown;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .more-products__paragraph {
   .upper(16px);
   .center();
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -36,12 +40,11 @@
 .more-products__icon {
   display: block;
   margin: 0 auto;
-  padding-top: 25px;
+  padding-top: 35px;
 }
 
 .more-products__path {
-  fill: @lightgrey;
-  opacity: 0.2;
+  fill: @greybrown;
 }
 
 @media (min-width: @tablet-width) {
