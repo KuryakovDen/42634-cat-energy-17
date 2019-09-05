@@ -58,6 +58,9 @@
 .logo__img {
   background-size: 100%;
   background-position: center;
+  width: 191px;
+  height: 39px;
+  max-width: none;
 
   &:hover {
     .opacity();
@@ -66,17 +69,6 @@
   &:active {
     .opacity(0.6);
   }
-}
-
-@media (max-width: @mobile) {
-  /*
-  .logo--closed + .page-navigation {
-    display: none;
-  }
-
-  .logo--opened + .page-navigation {
-    display: block;
-  }*/
 }
 
 @media (min-width: @tablet-width) {
