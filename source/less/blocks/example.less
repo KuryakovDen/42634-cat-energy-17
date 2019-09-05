@@ -92,21 +92,31 @@
 
 .example__item--weight {
   &::before {
-    width: 15px;
+    display: block;
+    width: 60px;
+    height: auto;
     position: absolute;
     content: "снижение веса";
-    top: 47px;
+    top: 44px;
     left: 30px;
-    white-space: nowrap;
+    white-space: wrap;
+    text-align: center;
+    font-family: "Arial", sans-serif;
   }
 }
 
 .example__item--days {
   &::after {
+    display: block;
+    width: 60px;
+    height: auto;
     position: absolute;
     content: "затрачено времени";
-    top: 47px;
-    left: 20px;
+    top: 44px;
+    left: 30px;
+    white-space: wrap;
+    text-align: center;
+    font-family: "Arial", sans-serif;
   }
 }
 
