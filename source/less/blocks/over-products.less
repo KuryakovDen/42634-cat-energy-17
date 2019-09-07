@@ -194,7 +194,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 870px;
+    width: 895px;
     min-height: 70px;
     border: none;
     border-bottom: 1px solid @lightgrey;
@@ -227,7 +227,8 @@
 
   .over-products__case {
     display: flex;
-    margin-bottom: 80px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     margin-left: 0;
   }
 
@@ -247,7 +248,8 @@
   }
 
   .over-products__list {
-    margin-left: 0;
+    margin-top: 10px;
+    margin-left: 30px;
     display: block;
     width: 900px;
   }
@@ -255,6 +257,32 @@
   .over-products__container {
     width: 245px;
     height: 289px;
-    margin-left: 80px;
+    margin-left: 25px;
+    margin-top: 5px;
+  }
+
+  .over-products__td {
+    &--margin {
+      margin-left: 0;
+    }
+  }
+
+  .over-products__title {
+    width: 100px;
+    left: -43px;
+
+    &::before {
+      top: 7px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: @green-button;
+      left: 330px;
+      top: 7px;
+      width: 70vw;
+      height: 3px;
+    }
   }
 }
