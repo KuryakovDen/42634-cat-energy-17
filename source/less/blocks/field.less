@@ -179,7 +179,7 @@
   display: block;
   top: 10px;
   padding: 0;
-  margin-left: 60px;
+  margin-right: 50px;
 }
 
 .field__item {
@@ -194,30 +194,49 @@
 
 @media (min-width: @tablet-width) {
   .field__list {
+    display: block;
     flex-direction: column;
     width: 630px;
+    height: 195px;
+    padding-bottom: 10px;
   }
 
   .field__list-over {
-    min-height: 120px;
+    width: 588px;
+    height: 120px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+    margin-top: -65px;
   }
 
   .field__item {
     margin-right: 80px;
 
     &--last {
-      padding-bottom: 0;
+      display: block;
+      padding-bottom: 10px;
     }
+
+    &--radio {
+      display: block;
+      margin-top: 30px;
+    }
+  }
+
+  .field__item-checkbox {
+    width: 160px;
   }
 
   .field__span {
     font-size: 20px;
+
+    &-radio {
+      margin-left: 80px;
+    }
   }
 
   .field__label {
@@ -242,7 +261,14 @@
     }
   }
 
+  .field__svg {
+    margin-top: 10px;
+  }
+
   .field__input {
+    height: 54px;
+    opacity: 0.5;
+
     &--name {
       width: 558px;
     }
@@ -258,11 +284,16 @@
     &--email {
       width: 550px;
       background-position: 510px center;
+      margin-bottom: 20px;
     }
 
     &--phone {
       width: 530px;
       background-position: 490px center;
+    }
+
+    &::placeholder {
+      font-size: 20px;
     }
   }
 

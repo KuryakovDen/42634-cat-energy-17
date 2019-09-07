@@ -72,14 +72,24 @@
 
 @media (min-width: @tablet-width) {
   .selection-form__fieldset-info {
-    margin-bottom: 70px;
+    margin-bottom: 18px;
   }
 
   .selection-form__legend {
     position: relative;
+    margin-left: 48px;
 
     font-size: 36px;
-    font-weight: bold;
+    font-weight: normal;
+
+    &::placeholder {
+      font-size: 20px;
+    }
+
+    &--middle {
+      top: 35px;
+      margin-bottom: 90px;
+    }
 
     &::before {
       position: absolute;
@@ -97,7 +107,7 @@
       background-color: @green-button;
       margin-left: 40px;
       margin-top: 20px;
-      width: 100vw;
+      width: 60vw;
       height: 3px;
     }
   }
@@ -105,6 +115,17 @@
   .selection-form__button {
     height: 52px;
     font-size: 20px;
+    margin-left: 70px;
+    margin-bottom: 80px;
+  }
+
+  .selection-form__wrapper {
+    margin-top: 30px;
+    margin-left: 50px;
+
+    &--goal {
+      margin-bottom: 110px;
+    }
   }
 
   .selection-form__case {
