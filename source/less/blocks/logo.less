@@ -74,6 +74,10 @@
 @media (min-width: @tablet-width) {
   .logo {
     width: 175px;
+
+    &--closed::before {
+      display: none;
+    }
   }
 
   .logo--opened::before,

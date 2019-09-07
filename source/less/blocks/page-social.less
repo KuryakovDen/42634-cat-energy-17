@@ -52,6 +52,7 @@
 .page-social__center {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 125px;
   margin: 0 auto;
 }
@@ -60,8 +61,17 @@
   .page-social {
     display: flex;
     align-items: center;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 35px;
+    padding-right: 10px;
+    min-height: 150px;
+    box-sizing: border-box;
+  }
+
+  .page-social__icons {
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-left: 70px;
   }
 
   .page-social__icon path {
@@ -83,6 +93,10 @@
   .page-social__icon--fb {
     width: 14px;
     height: 28px;
+  }
+
+  .page-social__academy {
+    margin-right: 10px;
   }
 }
 
