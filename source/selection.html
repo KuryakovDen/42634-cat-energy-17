@@ -52,19 +52,19 @@
             <legend class="selection-form__legend visually-hidden">Параметры кота</legend>
             <div class="selection-form__wrapper">
               <div class="field">
-                <label class="field__label">
+                <label class="field__label field__label-info">
                     Имя:*
                 </label>
                 <input class="field__input field__input--name" type="text" name="cat-name" placeholder="Барсик">
               </div>
               <div class="field">
-                <label class="field__label">
+                <label class="field__label field__label-info">
                     Вес (кг):*
                 </label>
                 <input class="field__input field__input--weight" type="number" name="cat-weight" placeholder="7">
               </div>
               <div class="field">
-                <label class="field__label">
+                <label class="field__label field__label-info">
                     Возраст (лет):
                 </label>
                 <input class="field__input field__input--age" type="number" name="cat-age" placeholder="7">
@@ -81,56 +81,52 @@
                     <span class="field__indicator">
                       <span class="field__circle"></span>
                     </span>
-                    <span class="field__span">Похудение</span>
+                    <span class="field__span field__span-radio">Похудение</span>
                   </label>
                 </li>
                 <li class="field__item field__item--radio">
                   <label class="field__label">
                     <input class="field__input visually-hidden" type="radio" name="radio-button" value="fat">
-                    <span class="field__indicator">
-                      <span class="field__circle"></span>
-                    </span>
-                    <span class="field__span">Набор массы</span>
+                    <span class="field__indicator"></span>
+                    <span class="field__span field__span-radio">Набор массы</span>
                   </label>
                 </li>
                 <li class="field__item field__item--radio field__item--last">
                   <label class="field__label">
                     <input class="field__input visually-hidden" type="radio" name="radio-button" value="idontknow">
-                    <span class="field__indicator">
-                      <span class="field__circle"></span>
-                    </span>
-                    <span class="field__span">Не знаю (нужен ваш совет)</span>
+                    <span class="field__indicator"></span>
+                    <span class="field__span field__span-radio">Не знаю (нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
             </div>
           </fieldset>
         </div>
-        <fieldset class="selection-form__fieldset">
+        <fieldset class="selection-form__fieldset selection-form__fieldset--top">
           <legend class="selection-form__legend">Контактные данные (владельца кота)</legend>
           <div class="selection-form__wrapper form-wrapper form-wrapper--flex">
             <div class="form-wrapper__block field">
-              <label class="field__label">
+              <label class="field__label field__label-contacts">
                   E-mail:*
               </label>
               <input class="field__input field__input--email" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
             </div>
             <div class="form-wrapper__block field">
-              <label class="field__label">
+              <label class="field__label field__label-contacts">
                   Телефон:*
               </label>
               <input class="field__input field__input--phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
             </div>
           </div>
         </fieldset>
-        <fieldset class="selection-form__fieldset">
-          <legend class="selection-form__legend">Комментарий</legend>
+        <fieldset class="selection-form__fieldset selection-form__fieldset--top">
+          <legend class="selection-form__legend selection-form__legend--middle">Комментарий</legend>
           <div class="selection-form__wrapper form-wrapper">
             <textarea class="form-wrapper__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
-        <fieldset class="selection-form__fieldset">
-          <legend class="selection-form__legend">Дополнительно</legend>
+        <fieldset class="selection-form__fieldset selection-form__fieldset--top">
+          <legend class="selection-form__legend selection-form__legend-padding selection-form__legend--middle">Дополнительно</legend>
           <div class="selection-form__wrapper field">
             <ul class="field__list field__list-over field__list--noborder">
               <li class="field__item">
@@ -148,9 +144,7 @@
                 <label class="field__label field__label-over">
                   <input class="field__input--check-on field__input--check-off visually-hidden" type="checkbox" name="water-name" value="water">
                   <span class="field__indicator">
-                    <svg class="field__svg" width="22" height="17">
-                      <use xlink:href="#tick"></use>
-                    </svg>
+                    <svg class="field__svg" width="22" height="17"></svg>
                   </span>
                   <span class="field__span field__span-check">Питьевая вода</span>
                 </label>
@@ -159,9 +153,7 @@
                 <label class="field__label field__label-over">
                   <input class="field__input--check-on field__input--check-off visually-hidden" type="checkbox" name="milk-name" value="milk">
                   <span class="field__indicator">
-                    <svg class="field__svg" width="22" height="17">
-                      <use xlink:href="#tick"></use>
-                    </svg>
+                    <svg class="field__svg" width="22" height="17"></svg>
                   </span>
                   <span class="field__span field__span-check">Молоко</span>
                 </label>
@@ -170,9 +162,7 @@
                 <label class="field__label field__label-over field__label-over--last">
                   <input class="field__input--check-on field__input--check-off visually-hidden" type="checkbox" name="vitamin-name" value="vitamin">
                   <span class="field__indicator">
-                    <svg class="field__svg" width="22" height="17">
-                      <use xlink:href="#tick"></use>
-                    </svg>
+                    <svg class="field__svg" width="22" height="17"></svg>
                   </span>
                   <span class="field__span field__span-check">Витамины</span>
                 </label>
