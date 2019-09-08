@@ -244,21 +244,15 @@
     </footer>
 
     <script>
-      var navMain = document.querySelector('.logo');
-      var navToggle = document.querySelector('.logo__burger');
+        var navMain = document.querySelector('.page-navigation');
+        var navToggle = document.querySelector('.logo__burger');
 
-      navMain.classList.remove('logo--nojs');
 
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('logo--closed')) {
-          navMain.classList.remove('logo--closed');
-          navMain.classList.add('logo--opened');
-        } else {
-          navMain.classList.add('logo--closed');
-          navMain.classList.remove('logo--opened');
-        }
-      });
-    </script>
+        navToggle.addEventListener('click', function() {
+          navToggle.classList.toggle('.logo--closed');
+          navMain.classList.toggle('.page-navigation--opened');
+        });
+      </script>
 
     <script src="js/picturefill.min.js" async></script>
   </body>
