@@ -10,6 +10,9 @@
 }
 
 .academy-info__header {
+  display: block;
+  margin-top: 30px;
+  margin-left: 10px;
   font-size: 16px;
   font-weight: normal;
   font-family: "Arial", sans-serif;
@@ -18,6 +21,7 @@
 @media (min-width: @tablet-width) {
   .academy-info {
     display: flex;
+    justify-content: center;
     align-items: center;
   }
 
@@ -25,6 +29,8 @@
     .arial();
     font-size: 16px;
     font-weight: normal;
+    margin-bottom: 35px;
+    margin-right: 20px;
   }
 
   .academy-info__link {
@@ -37,5 +43,9 @@
     display: flex;
     align-items: center;
     width: 160px;
+  }
+
+  .academy-info__header {
+    white-space: nowrap;
   }
 }

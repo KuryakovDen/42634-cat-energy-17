@@ -1,8 +1,18 @@
+.field:last-child {
+  margin-top: -4px;
+}
+
 .field__label {
   position: relative;
   .upper();
   line-height: 1;
   margin-right: 15px;
+  bottom: 6px;
+  font-size: 16px;
+
+  &-contacts {
+    margin-right: 10px;
+  }
 }
 
 .field__list .field__label {
@@ -17,7 +27,7 @@
 .field__svg {
   display: block;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 8px;
   fill: @green-button;
 }
 
@@ -38,7 +48,6 @@
   left: 20px;
   width: 30px;
   height: 30px;
-  /*background-image: url("../img/icon-tick.svg");*/
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -64,10 +73,9 @@
   position: absolute;
   content: "";
   top: 0;
-  left: 0;
+  left: 16px;
   width: 30px;
   height: 30px;
-  /*background-image: url("../img/icon-tick.svg");*/
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -78,7 +86,7 @@
   position: absolute;
   content: "";
   top: 0;
-  left: 0;
+  left: 16px;
   width: 30px;
   height: 30px;
   background: none;
@@ -99,11 +107,14 @@
 }
 
 .field__list {
-  height: auto;
+  width: 320px;
+  min-height: 160px;
   display: flex;
   flex-direction: column;
   .list-style();
   .border();
+  margin-top: -45px;
+  margin-left: -18px;
 
   &--noborder {
     border: none;
@@ -121,30 +132,30 @@
   }
 
   &--name {
-    width: 224px;
+    width: 218px;
   }
 
   &--weight {
-    width: 205px;
+    width: 197px;
   }
 
   &--age {
-    width: 176px;
+    width: 164px;
   }
 
   &--email {
-    width: 214px;
+    width: 212px;
     background-image: url("../img/icon-mail.svg");
     background-size: 18px 18px;
-    background-position: 183px center;
+    background-position: 180px center;
     background-repeat: no-repeat;
   }
 
   &--phone {
-    width: 199px;
+    width: 195px;
     background-image: url("../img/icon-phone.svg");
     background-size: 21px 21px;
-    background-position: 170px center;
+    background-position: 165px center;
     background-repeat: no-repeat;
   }
 }
@@ -155,6 +166,12 @@
   margin: 0;
   margin-left: 75px;
   padding-top: 10px;
+
+  &-radio {
+    font-size: 16px;
+    margin-top: -5px;
+    margin-left: 65px;
+  }
 }
 
 .field__span-check {
@@ -162,51 +179,83 @@
   display: block;
   top: 10px;
   padding: 0;
+  margin-right: 50px;
 }
 
 .field__item {
-  padding-top: -25px;
-
-  &--last {
-    /*padding-bottom: 25px;*/
-  }
+  padding-top: -20px;
+  height: 41px;
 
   &--radio {
     width: 280px;
+    height: 40px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .field__list {
+    display: block;
     flex-direction: column;
     width: 630px;
+    height: 195px;
+    padding-bottom: 10px;
+    margin-left: 5px;
   }
 
   .field__list-over {
-    min-height: 120px;
+    width: 588px;
+    height: 120px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+    margin-top: -65px;
   }
 
   .field__item {
+    display: block;
     margin-right: 80px;
 
     &--last {
-      padding-bottom: 0;
+      display: block;
+      padding-bottom: 10px;
     }
+
+    &--radio {
+      display: block;
+      margin-top: 30px;
+    }
+  }
+
+  .field__item-checkbox {
+    width: 160px;
   }
 
   .field__span {
     font-size: 20px;
+
+    &-radio {
+      margin-left: 80px;
+    }
   }
 
   .field__label {
     font-size: 20px;
     white-space: nowrap;
+
+    &--radio {
+      bottom: 20px;
+    }
+
+    &--radio:first-child {
+      top: -12px;
+    }
+
+    &--radio:last-child {
+      bottom: 30px;
+    }
   }
 
   .field__list .field__label {
@@ -226,7 +275,14 @@
     }
   }
 
+  .field__svg {
+    margin-top: 10px;
+  }
+
   .field__input {
+    height: 54px;
+    opacity: 0.5;
+
     &--name {
       width: 558px;
     }
@@ -242,11 +298,16 @@
     &--email {
       width: 550px;
       background-position: 510px center;
+      margin-bottom: 20px;
     }
 
     &--phone {
       width: 530px;
       background-position: 490px center;
+    }
+
+    &::placeholder {
+      font-size: 20px;
     }
   }
 
@@ -270,10 +331,12 @@
     flex-direction: column;
     width: 570px;
     box-sizing: border-box;
+    margin-left: -15px;
   }
 
   .field__item {
-    margin-right: 50px;
+    display: block;
+    margin: 0;
 
     &--last {
       padding-bottom: 0;
@@ -281,16 +344,18 @@
   }
 
   .field__list-over {
-    width: 1100px;
+    width: 1130px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
+    margin-left: -17px;
     box-sizing: border-box;
   }
 
   .field__list .field__label {
     display: block;
+    margin: 0;
     margin-bottom: 30px;
     margin-left: 35px;
   }
@@ -301,6 +366,7 @@
 
   .field__input {
     margin-bottom: 24px;
+    height: 45px;
 
     &--name {
       width: 499px;

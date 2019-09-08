@@ -4,6 +4,7 @@
 }
 
 .over-products__wrapper {
+  margin-top: 35px;
   border-bottom: 1px solid @lightgrey;
 }
 
@@ -16,9 +17,21 @@
 }
 
 .over-products__header {
+  display: block;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   .upper(16px);
   text-align: left;
   font-weight: normal;
+
+  &--top {
+    margin-top: -22px;
+  }
+
+  &--last {
+    margin-top: -28px;
+  }
 }
 
 .over-products__table {
@@ -28,11 +41,35 @@
 .over-products__tr {
   .arial();
   line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.over-products__center {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.over-products__title {
+  width: 100px;
+  white-space: nowrap;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: @green-button;
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 10vw;
+    height: 3px;
+  }
 }
 
 .over-products__container {
   width: 280px;
   height: 289px;
+  margin-top: 40px;
   margin-bottom: 35px;
 }
 
@@ -42,11 +79,17 @@
     min-height: 140px;
   }
 
+  .over-products__center {
+    margin: auto;
+    width: auto;
+  }
+
   .over-products__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin: auto;
     width: 710px;
     min-height: 140px;
     border: 1px solid @lightgrey;
@@ -55,6 +98,15 @@
   .over-products__container {
     width: 708px;
     height: 200px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .over-products__list {
+    width: 710px;
+    display: block;
+    margin: 0 auto;
   }
 
   .over-products__item {
@@ -66,7 +118,7 @@
   .over-products__order {
     width: 630px;
     margin: 0;
-    margin-top: 15px;
+    margin-top: -10px;
     margin-bottom: 15px;
     margin-left: 40px;
     font-size: 16px;
@@ -83,19 +135,32 @@
 
   .over-products__tr {
     display: flex;
+    margin-top: 5px;
+    margin-right: 10px;
     justify-content: space-between;
-    width: 220px;
+    width: 225px;
+    font-size: 16px;
+  }
+
+  .over-products__td {
+    &--margin {
+      margin-left: 70px;
+    }
   }
 
   .over-products__header {
     font-size: 20px;
     margin-left: 40px;
+    margin-top: 10px;
   }
 
   .over-products__title {
+    display: block;
     position: relative;
     font-size: 36px;
-    font-weight: bold;
+    font-weight: normal;
+    margin-top: -20px;
+    margin-left: 70px;
     margin-bottom: 75px;
 
     &::before {
@@ -114,7 +179,7 @@
       background-color: @green-button;
       margin-left: 40px;
       margin-top: 20px;
-      width: 100vw;
+      width: 300px;
       height: 3px;
     }
   }
@@ -129,7 +194,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 870px;
+    width: 895px;
     min-height: 70px;
     border: none;
     border-bottom: 1px solid @lightgrey;
@@ -162,7 +227,8 @@
 
   .over-products__case {
     display: flex;
-    margin-bottom: 80px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     margin-left: 0;
   }
 
@@ -182,7 +248,8 @@
   }
 
   .over-products__list {
-    margin-left: 0;
+    margin-top: 10px;
+    margin-left: 30px;
     display: block;
     width: 900px;
   }
@@ -190,6 +257,34 @@
   .over-products__container {
     width: 245px;
     height: 289px;
-    margin-left: 80px;
+    margin-left: 25px;
+    margin-top: 5px;
+  }
+
+  .over-products__td {
+    &--margin {
+      margin-left: 0;
+    }
+  }
+
+  .over-products__title {
+    width: 80px;
+    left: -48px;
+
+    &::before {
+      width: 80px;
+      left: -100px;
+      top: 7px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: @green-button;
+      left: 330px;
+      top: 7px;
+      width: 70vw;
+      height: 3px;
+    }
   }
 }

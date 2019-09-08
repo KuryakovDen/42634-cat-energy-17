@@ -2,12 +2,43 @@
   .margin();
   padding: 0;
   border: none;
+
+  &--top {
+    margin-top: -62px;
+  }
 }
 
 .selection-form__legend {
+  display: block;
+  margin-bottom: 35px;
   .header-selection();
   padding-top: 30px;
-  padding-bottom: 30px;
+
+  &-padding {
+    padding-bottom: 22px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: @green-button;
+    margin-left: 43px;
+    margin-top: -5px;
+    width: 20vw;
+    height: 3px;
+  }
+}
+
+.selection-form__legend--middle {
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: @green-button;
+    margin-top: 12px;
+    margin-left: 26px;
+    width: 29vw;
+    height: 3px;
+  }
 }
 
 .selection-form__button {
@@ -16,6 +47,7 @@
   outline: none;
   border: none;
   padding-top: 0;
+  font-size: 16px;
 }
 
 .selection-form__fieldset ::placeholder {
@@ -29,7 +61,8 @@
     .arial();
     .center();
     line-height: 1.14;
-    margin-bottom: 34px;
+    margin-top: 8px;
+    margin-bottom: 30px;
   }
 }
 
@@ -39,14 +72,24 @@
 
 @media (min-width: @tablet-width) {
   .selection-form__fieldset-info {
-    margin-bottom: 70px;
+    margin-bottom: 18px;
   }
 
   .selection-form__legend {
     position: relative;
+    margin-left: 48px;
 
     font-size: 36px;
-    font-weight: bold;
+    font-weight: normal;
+
+    &::placeholder {
+      font-size: 20px;
+    }
+
+    &--middle {
+      top: 35px;
+      margin-bottom: 90px;
+    }
 
     &::before {
       position: absolute;
@@ -64,7 +107,7 @@
       background-color: @green-button;
       margin-left: 40px;
       margin-top: 20px;
-      width: 100vw;
+      width: 60vw;
       height: 3px;
     }
   }
@@ -72,6 +115,17 @@
   .selection-form__button {
     height: 52px;
     font-size: 20px;
+    margin-left: 70px;
+    margin-bottom: 80px;
+  }
+
+  .selection-form__wrapper {
+    margin-top: 30px;
+    margin-left: 50px;
+
+    &--goal {
+      margin-bottom: 110px;
+    }
   }
 
   .selection-form__case {
@@ -91,11 +145,24 @@
 @media (min-width: @desktop-width) {
   .selection-form__container {
     display: flex;
+    margin-bottom: 43px;
   }
 
   .selection-form__fieldset {
+    width: 570px;
+    height: 195px;
     margin-right: 0;
     margin-left: 0;
+    margin-bottom: 90px;
+
+    &--top {
+      margin-bottom: 60px;
+    }
+
+    &--bottom {
+      margin-top: 160px;
+      margin-bottom: 0;
+    }
   }
 
   .selection-form__fieldset-info {
@@ -106,23 +173,50 @@
 
   .selection-form__button {
     width: 570px;
-    margin-left: 0;
+    margin-left: 110px;
     margin-right: 80px;
+    margin-top: 60px;
+    margin-bottom: 0;
   }
 
   .selection-form__case {
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
 
   .selection-form__required {
     &--bottom {
-      margin-top: 20px;
-      margin-left: 70px;
+      margin-left: 10px;
+      margin-top: 80px;
     }
   }
 
   .selection-form__wrapper {
     width: 570px;
+    margin-left: 110px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+
+    &--goal {
+      margin: 0;
+      margin-top: 80px;
+      margin-left: 20px;
+    }
+  }
+
+  .selection-form__legend {
+    margin-left: 110px;
+
+    &-padding {
+      margin-top: 0;
+    }
+
+    &--middle {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &--middle::after {
+      width: 1100px;
+    }
   }
 }

@@ -1,4 +1,4 @@
-@import "normalize.css";
+@import "css/normalize.css";
 @import "blocks/academy-info.less";
 @import "blocks/catalog.less";
 @import "blocks/food-extra-list.less";
@@ -97,6 +97,10 @@ svg {
 
   .size-container {
     width: 768px;
+
+    /*&--top {
+      margin-top: -35px;
+    }*/
   }
 }
 
@@ -110,10 +114,56 @@ svg {
 
     &--big {
       width: 1300px;
+      margin-left: 115px;
+    }
+
+    &--bottom {
+      margin-bottom: 40px;
     }
 
     &--desktop {
-      width: auto;
+      width: 1350px;
+      margin-left: 40px;
+    }
+
+    &--left {
+      margin-left: 80px;
+      margin-top: 119px;
+    }
+
+    &--top {
+      margin-top: 43px;
+    }
+
+    &--color {
+      background-color: @grey;
+      width: 1280px;
+    }
+  }
+}
+
+@media (min-width: 1310px) {
+  body {
+    min-width: @desktop-width;
+  }
+
+  .size-container {
+    &--big {
+      width: 1300px;
+      margin-left: 115px;
+    }
+
+    &--bottom {
+      margin-bottom: 40px;
+    }
+
+    &--desktop {
+      width: 1350px;
+      margin-left: 225px;
+    }
+
+    &--block {
+      margin-left: 100px;
     }
   }
 }
