@@ -305,26 +305,42 @@
 }
 
 @media (min-width: @desktop-width) {
+  .example {
+    width: 1440px;
+  }
+
   .example__paragraph {
     width: 430px;
     font-size: 16px;
   }
 
   .example__textcost {
-    width: 300px;
+    width: 400px;
     position: absolute;
-    left: -450px;
-    bottom: -380px;
+    left: -565px;
+    bottom: -375px;
     text-align: center;
     font-size: 20px;
     z-index: 2;
   }
 
+  .example__textcost-span {
+    padding-left: 50px;
+  }
+
   .example__toogle {
     min-height: 350px;
+    margin-left: 560px;
+    background: none;
+  }
+
+  .example__status {
+    margin-left: 680px;
+    margin-top: 60px;
   }
 
   .example__container {
+    margin-top: 70px;
     margin-bottom: 0;
   }
 
@@ -337,12 +353,13 @@
     display: block;
 
     &--before {
+      width: 370px;
       left: 0;
-      z-index: 1;
     }
 
     &--after {
-      left: 50px;
+      left: 30px;
+      margin-left: -265px;
       /*background-color: #eaeaea;*/
       z-index: 2;
     }
