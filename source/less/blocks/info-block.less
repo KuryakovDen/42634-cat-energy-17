@@ -175,44 +175,45 @@
 
   .info-block__slim-paragraph,
   .info-block__gain-paragraph {
+    width: 470px;
     .margin();
     border-bottom: none;
     font-size: 16px;
-    padding-left: 52px;
-    padding-right: 55px;
+    padding-left: 30px;
+    padding-right: 50px;
     margin-top: 45px;
   }
 
   .info-block__header {
-    .padding(65px, 250px, 26px, 200px);
+    .padding(65px, 250px, 26px, 212px);
     font-size: 36px;
     white-space: nowrap;
 
     &--slim::before {
       width: 71px;
       height: 97px;
-      left: 70px;
-      top: 40px;
+      left: 63px;
+      top: 37px;
     }
 
     &--gain::before {
       width: 134px;
       height: 57px;
-      left: 34px;
+      left: 33px;
       top: 60px;
     }
 
     &--slim::after {
       width: 100px;
       height: 100px;
-      left: 60px;
+      left: 50px;
       top: 40px;
     }
 
     &--gain::after {
       width: 100px;
       height: 100px;
-      left: 60px;
+      left: 52px;
       top: 40px;
     }
   }
@@ -220,14 +221,18 @@
   .info-block__catalog {
     &--slim,
     &--pro {
-      padding-left: 40px;
-      margin-top: -10px;
+      padding-left: 20px;
+      margin-top: 10px;
     }
 
     &--slim::after,
     &--pro::after {
-      top: 25px;
-      left: 160px;
+      top: 5px;
+      left: 140px;
+    }
+
+    &--slim::after {
+      left: 150px;
     }
   }
 
