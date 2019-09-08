@@ -145,11 +145,24 @@
 @media (min-width: @desktop-width) {
   .selection-form__container {
     display: flex;
+    margin-bottom: 43px;
   }
 
   .selection-form__fieldset {
+    width: 570px;
+    height: 195px;
     margin-right: 0;
     margin-left: 0;
+    margin-bottom: 90px;
+
+    &--top {
+      margin-bottom: 60px;
+    }
+
+    &--bottom {
+      margin-top: 160px;
+      margin-bottom: 0;
+    }
   }
 
   .selection-form__fieldset-info {
@@ -160,23 +173,50 @@
 
   .selection-form__button {
     width: 570px;
-    margin-left: 0;
+    margin-left: 110px;
     margin-right: 80px;
+    margin-top: 60px;
+    margin-bottom: 0;
   }
 
   .selection-form__case {
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
 
   .selection-form__required {
     &--bottom {
-      margin-top: 20px;
-      margin-left: 70px;
+      margin-left: 10px;
+      margin-top: 80px;
     }
   }
 
   .selection-form__wrapper {
     width: 570px;
+    margin-left: 110px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+
+    &--goal {
+      margin: 0;
+      margin-top: 80px;
+      margin-left: 20px;
+    }
+  }
+
+  .selection-form__legend {
+    margin-left: 110px;
+
+    &-padding {
+      margin-top: 0;
+    }
+
+    &--middle {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &--middle::after {
+      width: 1100px;
+    }
   }
 }
