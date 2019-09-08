@@ -1,4 +1,4 @@
-@import "normalize.css";
+@import "css/normalize.css";
 @import "blocks/academy-info.less";
 @import "blocks/catalog.less";
 @import "blocks/food-extra-list.less";
@@ -138,6 +138,32 @@ svg {
     &--color {
       background-color: @grey;
       width: 1280px;
+    }
+  }
+}
+
+@media (min-width: 1310px) {
+  body {
+    min-width: @desktop-width;
+  }
+
+  .size-container {
+    &--big {
+      width: 1300px;
+      margin-left: 115px;
+    }
+
+    &--bottom {
+      margin-bottom: 40px;
+    }
+
+    &--desktop {
+      width: 1350px;
+      margin-left: 225px;
+    }
+
+    &--block {
+      margin-left: 100px;
     }
   }
 }
